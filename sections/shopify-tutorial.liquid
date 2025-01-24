@@ -1,0 +1,162 @@
+<p>Hello world</p>
+
+<h2>Text Setting</h2>
+<p>{{ section.settings.text_setting }}</p>
+
+<h2>Textarae settings</h2>
+<p>{{ section.settings.textarea_setting |  newline_to_br }}</p>
+
+<h2>Rich Setting</h2>
+<div>{{ section.settings.richtext_setting }}</div>
+
+<h2>inline Rich Setting</h2>
+<div>{{ section.settings.inline_richtext_setting }}</div>
+
+<h2>Number</h2>
+<p>{{ section.settings.number_setting }}</p>
+
+<h2>Range</h2>
+<p>{{ section.settings.range_setting }}</p>
+
+<h2>Select</h2>
+<p>{{ section.settings.select_setting }}</p>
+
+<h2>checkbox</h2>
+{% if section.settings.checkbox_setting == true %}
+    <p>Checkbox is true</p>
+    {% else %}
+        <p>Checkbox is false</p>
+    {% endif %}
+  
+{{ section.settings.checkbox_setting }}
+
+<div>
+    <h2>Color</h2>
+    <p>{{ section.settings.color_setting }}</p>
+</div>
+
+<div style="background : {{ section.settings.colorbackground_setting }} ">
+    <h2>Color Background</h2>
+<p>{{ section.settings.colorbackground_setting }}</p>
+</div>
+
+{% if section.settings.imagepicker_setting  %}
+    <h2>Image picker </h2>
+{{ section.settings.imagepicker_setting |  image_url: width: 500 , height: 500 |  image_tag }}
+{% endif %}
+
+<div>
+    {{ section.settings.video_setting |  video_tag: controls: true }}
+</div>
+
+{%  schema  %} 
+{
+    "name": "sections-tutorial",
+    "tag": "section",
+    "class": "shopify-tutorial",
+    "settings": [
+        {
+            "type": "text",
+            "id": "text_setting",
+            "label": "Text setting",
+            "default" : "This is my first setting",
+            "info": "This is some helper text",
+            "placeholder": "This is a placeholder"
+        },
+        {
+            "type": "textarea",
+            "id": "textarea_setting",
+            "label": "Textarea setting"
+        },
+        {
+            
+            "type": "richtext",
+            "id": "richtext_setting",
+            "label": "Richtext setting"
+        },
+        {
+                 
+            "type": "inline_richtext",
+            "id": "inline_richtext_setting",
+            "label": "Inline Richtext setting"
+        },
+        {
+            "type": "number",
+            "id": "number_setting",
+            "label": "Number setting",
+            "placeholder": "This is a placeholder"
+        },
+        {
+            
+            "type": "range",
+            "id": "range_setting",
+            "label": "Range setting",
+            "min": 5,
+            "max": 100,
+            "step": 5,
+            "default": 10
+        },
+        {
+            "type": "select",
+            "id": "select_setting",
+            "label": "Select setting",
+            "options": [
+                {
+                    "value": "Value 1",
+                    "label": "value 1"
+                },
+                {
+                    "value": "Value 2",
+                    "label": "value 2"
+                },
+                {
+                    "value": "Value 3",
+                    "label": "value 3"
+                },
+                {
+                    "value": "Value 4",
+                    "label": "value 4"
+                }
+            ]
+        },
+        {
+            "type": "checkbox",
+            "id": "checkbox_setting",
+            "label": "Checkbox setting",
+            "default": true
+        },
+        {
+            "type": "color",
+            "id": "color_setting",
+            "label": "Color setting"
+        },
+        {
+            "type": "color_background",
+            "id": "colorbackground_setting",
+            "label": "Color Background setting"
+        },
+        {
+            "type": "image_picker",
+            "id": "imagepicker_setting",
+            "label": "Imagepicker setting"
+        },
+        {
+            
+        "type": "video",
+         "id": "video_setting",
+        "label": " Video setting"
+        }
+        
+        
+        
+    ],
+    "blocks": [],
+    "presets": [
+        {
+            "name": "section-tutorial",
+            "settings": {}
+        }
+    ]
+
+}
+ {% endschema %}
