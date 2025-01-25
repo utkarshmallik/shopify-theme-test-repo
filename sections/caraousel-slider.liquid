@@ -1,5 +1,4 @@
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer></script>
-<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
 {%- assign id = '#shopify-section-' | append: section.id -%}
 {% comment %}
 * Make sure you have the Flickity plugin installed and the proper license for this to function on your store
@@ -8,7 +7,7 @@
 
 {% assign cell_align = section.settings.cell_align %}
 {% assign wrap_around = section.settings.wrap_around %}
-{% assign img_width = section.settings.img_width | append: 'x' %}
+
 
 <div class="flickity-section-{{ section.id }} flickity-index-slider collection " style="background-color: {{ section.settings.bg }};padding-bottom: 70px;">
 <div class="page-width">
