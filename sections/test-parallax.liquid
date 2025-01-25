@@ -1,0 +1,96 @@
+<!-- parallax-section.liquid -->
+<div class="parallax-section">
+  <div class="parallax-container">
+    <div class="parallax-background" style="background-image: url({{ section.settings.background_image | asset_url }});"></div>
+    <div class="parallax-content">
+      <h1 class="parallax-title">{{ section.settings.title }}</h1>
+      <p class="parallax-description">{{ section.settings.description }}</p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .parallax-section {
+      position: relative;
+      overflow: hidden;
+  }
+
+  .parallax-container {
+      position: relative;
+      height: 600px; /* Adjust for your needs */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      z-index: 1;
+  }
+
+  .parallax-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      z-index: -1;
+  }
+
+  .parallax-content {
+      z-index: 2;
+      max-width: 800px;
+      padding: 20px;
+  }
+
+  .parallax-title {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+  }
+
+  .parallax-description {
+      font-size: 1.25rem;
+  }
+</style>
+
+<script>
+  document.addEventListener('scroll', function () {
+      const scrolled = window.scrollY;
+      const parallaxBackground = document.querySelector('.parallax-background');
+      if (parallaxBackground) {
+          parallaxBackground.style.transform = `translateY(${scrolled * 0.5}px)`;
+      }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Parallax-Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Welcome to Our Store"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Experience luxury with our exclusive collections."
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Parallax-Section"
+    }
+  ]
+}
+{% endschema %}
