@@ -1,0 +1,13 @@
+.variant-picker {
+    margin-bottom: 20px;
+}
+
+.variant-picker--color {
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+.variant-picker--size {
+    background-color: #fff;
+    padding: 10px;
+}

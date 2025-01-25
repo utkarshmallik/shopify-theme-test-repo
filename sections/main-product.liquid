@@ -15,8 +15,10 @@
   {{ 'component-slider.css' | asset_url | stylesheet_tag }}
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+  {{ 'colorpicker.css' | asset_url | stylesheet_tag }}
 
   {% unless product.has_only_default_variant %}
+    {{ 'colorpicker.css' | asset_url | stylesheet_tag }}
     {{ 'component-product-variant-picker.css' | asset_url | stylesheet_tag }}
     {{ 'component-swatch-input.css' | asset_url | stylesheet_tag }}
     {{ 'component-swatch.css' | asset_url | stylesheet_tag }}
@@ -461,68 +463,31 @@
                   render 'share-button', block: block, share_link: share_url
                 %}
 
-                {%- when 'variant_picker' -%}
-                  {% if product.template_suffix == 'products' %}
-                    {% render 'product-variant-picker',
-                      product: product,
-                      block: block,
-                      product_form_id: product_form_id,
-                      is_bundle: true,
-                      product_index: 0,
-                      section: section
-                    %}
-                    {% render 'product-variant-picker',
-                      product: product,
-                      block: block,
-                      product_form_id: product_form_id,
-                      is_bundle: true,
-                      product_index: 1,
-                      section: section
-                    %}
-                  {% else %}
-                    {% render 'product-variant-picker',
-                      product: product,
-                      block: block,
-                      product_form_id: product_form_id,
-                      section: section
-                    %}
+              {%- when 'variant_picker' -%}
+                {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
+                {% for option in product.options_with_values %}
+                  {% if option.name == 'Color' %}
+                      <div class="variant-picker variant-picker--color">
+                          <label for="variant-{{ option.name | downcase }}">{{ option.name }}</label>
+                          <select id="variant-{{ option.name | downcase }}" name="options[{{ option.position }}]">
+                              {% for value in option.values %}
+                                  <option value="{{ value }}">{{ value }}</option>
+                              {% endfor %}
+                          </select>
+                      </div>
+                  {% elsif option.name == 'Size' %}
+                      <div class="variant-picker variant-picker--size">
+                          <label for="variant-{{ option.name | downcase }}">{{ option.name }}</label>
+                          <select id="variant-{{ option.name | downcase }}" name="options[{{ option.position }}]">
+                              {% for value in option.values %}
+                                  <option value="{{ value }}">{{ value }}</option>
+                              {% endfor %}
+                          </select>
+                      </div>
                   {% endif %}
-                  {% if product.template_suffix == 'products' %}
-                    <fieldset class="js product-form__input __color">
-                      <legend class="form__label"><span>Color</span></legend>
-                      {% for color_name in product.metafields.custom.color_name.value %}
-                        {% assign main_loop = forloop.index %}
-                        {% assign target_url = false %}
-                        {% if product.metafields.custom.color_products.value != blank %}
-                          {% for link_product in product.metafields.custom.color_products.value %}
-                            {% if forloop.index == main_loop %}
-                              {% assign link_product = product.metafields.custom.color_products.value %}
-                              {% assign target_url = link_product.url %}
-                            {% endif %}
-                          {% endfor %}
-                        {% endif %}
-                        {% unless target_url == false %} <span> {% endunless %}
-                        <input
-                          id="index-{{ forloop.index  }}"
-                          type="radio"
-                          name="Color"
-                          value="{{ value | escape }}"
-                          {% if forloop.first %}
-                            checked
-                          {% endif %}
-                        >
-                        <label
-                          onclick="location.href='{{ target_url }}'"
-                          for="index-{{ forloop.index  }}"
-                          style="background-color:{{ color_name }};{% if forloop.first %} pointer-events:none; {% endif %}"
-                        >
-                        {% render 'small-check' %}
-                          <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
-                        </label>
-                        {% unless target_url == false %} </span> {% endunless %}
-                      {% endfor %}
-                    </fieldset>
-                  {% endif %}
+              {% endfor %}
+              
+
               {%- when 'buy_buttons' -%}
                 {%- render 'buy-buttons',
                   block: block,
