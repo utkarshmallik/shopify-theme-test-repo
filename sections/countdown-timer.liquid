@@ -1,0 +1,120 @@
+<div class="countdown-timer-section">
+   <div class="countdown-wrapper">
+      <h2 class="countdown-title">{{ settings.countdown_title }}</h2>
+      <div id="countdown-timer">
+         <div class="time-unit">
+            <span id="days">00</span>
+            <p>Days</p>
+         </div>
+         <div class="time-unit">
+            <span id="hours">00</span>
+            <p>Hours</p>
+         </div>
+         <div class="time-unit">
+            <span id="minutes">00</span>
+            <p>Minutes</p>
+         </div>
+         <div class="time-unit">
+            <span id="seconds">00</span>
+            <p>Seconds</p>
+         </div>
+      </div>
+      <div class="progress-bar">
+         <div class="progress" id="progress-bar"></div>
+      </div>
+   </div>
+</div>
+
+<style>
+.countdown-timer-section {
+   padding: 20px;
+   text-align: center;
+   background: #f9f9f9;
+}
+.countdown-wrapper {
+   max-width: 500px;
+   margin: 0 auto;
+}
+.countdown-title {
+   font-size: 1.5rem;
+   margin-bottom: 10px;
+}
+#countdown-timer {
+   display: flex;
+   justify-content: center;
+   gap: 15px;
+   margin-bottom: 10px;
+}
+.time-unit {
+   text-align: center;
+}
+.time-unit span {
+   font-size: 2rem;
+   font-weight: bold;
+}
+.progress-bar {
+   background: #ddd;
+   height: 10px;
+   border-radius: 5px;
+   overflow: hidden;
+}
+.progress {
+   height: 100%;
+   background: #4caf50;
+   width: 0;
+   transition: width 0.2s ease;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+   const targetDate = new Date("{{ settings.target_date }}").getTime();
+
+   function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      if (distance < 0) {
+         document.getElementById("countdown-timer").innerHTML = "Expired";
+         document.getElementById("progress-bar").style.width = "100%";
+         return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("days").innerText = days;
+      document.getElementById("hours").innerText = hours;
+      document.getElementById("minutes").innerText = minutes;
+      document.getElementById("seconds").innerText = seconds;
+
+      const progress = 100 - ((distance / (targetDate - Date.now())) * 100);
+      document.getElementById("progress-bar").style.width = progress + "%";
+   }
+
+   updateCountdown();
+   setInterval(updateCountdown, 1000);
+});
+</script>
+
+{% schema %}
+{
+  "name": "Countdown Timer",
+  "settings": [
+    {
+      "type": "text",
+      "id": "countdown_title",
+      "label": "Countdown Title",
+      "default": "Limited Time Offer"
+    },
+    {
+      "type": "text",
+      "id": "target_date",
+      "label": "Target Date (YYYY-MM-DDTHH:MM:SS)",
+      "default": "2025-01-30T23:59:59"
+    }
+  ]
+}
+{% endschema %}
