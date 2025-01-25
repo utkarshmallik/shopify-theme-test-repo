@@ -121,10 +121,6 @@ Edit
    display: block;
 }
 </style>
-JavaScript
-liquid
-Copy
-Edit
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const tabLinks = document.querySelectorAll(".tablinks");
@@ -205,6 +201,11 @@ document.addEventListener('DOMContentLoaded', function() {
       "label": "Tab 3 Content",
       "default": "Content for Tab 3"
     }
-  ]
+  ],
+  "presets": 
+        [
+            {
+                "name": "tab-switch"
+            }]
 }
 {% endschema %}
