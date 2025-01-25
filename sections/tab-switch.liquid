@@ -1,0 +1,210 @@
+<div class="about">
+   {% if settings.portfolio_link %}
+   <a class="bg_links social portfolio" href="{{ settings.portfolio_link }}" target="_blank">
+      <span class="icon"></span>
+   </a>
+   {% endif %}
+
+   {% if settings.dribbble_link %}
+   <a class="bg_links social dribbble" href="{{ settings.dribbble_link }}" target="_blank">
+      <span class="icon"></span>
+   </a>
+   {% endif %}
+
+   {% if settings.linkedin_link %}
+   <a class="bg_links social linkedin" href="{{ settings.linkedin_link }}" target="_blank">
+      <span class="icon"></span>
+   </a>
+   {% endif %}
+
+   <a class="bg_links logo"></a>
+</div>
+
+<section id="wrapper">
+   <div class="content">
+      <!-- Tab Links -->
+      <div class="tabs">
+         <button class="tablinks active" data-country="tab_1">
+            <p>{{ settings.tab_1_title | default: 'Tab 1' }}</p>
+         </button>
+         <button class="tablinks" data-country="tab_2">
+            <p>{{ settings.tab_2_title | default: 'Tab 2' }}</p>
+         </button>
+         <button class="tablinks" data-country="tab_3">
+            <p>{{ settings.tab_3_title | default: 'Tab 3' }}</p>
+         </button>
+      </div>
+
+      <!-- Tab Content -->
+      <div class="wrapper_tabcontent">
+         <div id="tab_1" class="tabcontent active">
+            <h3>{{ settings.tab_1_title | default: 'Tab 1' }}</h3>
+            <p>{{ settings.tab_1_content | default: 'Content goes here' }}</p>
+         </div>
+         <div id="tab_2" class="tabcontent">
+            <h3>{{ settings.tab_2_title | default: 'Tab 2' }}</h3>
+            <p>{{ settings.tab_2_content | default: 'Content goes here' }}</p>
+         </div>
+         <div id="tab_3" class="tabcontent">
+            <h3>{{ settings.tab_3_title | default: 'Tab 3' }}</h3>
+            <p>{{ settings.tab_3_content | default: 'Content goes here' }}</p>
+         </div>
+      </div>
+   </div>
+</section>
+CSS
+liquid
+Copy
+Edit
+<style>
+.about {
+   position: fixed;
+   z-index: 10;
+   bottom: 10px;
+   right: 10px;
+   width: 40px;
+   height: 40px;
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+   transition: all 0.2s ease;
+}
+
+.about .bg_links {
+   width: 40px;
+   height: 40px;
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(255, 255, 255, 0.2);
+   backdrop-filter: blur(5px);
+   position: absolute;
+}
+
+.about .logo {
+   width: 40px;
+   height: 40px;
+   background-size: 50%;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-image: url('https://rafaelalucas91.github.io/assets/codepen/logo_white.svg');
+}
+
+.tabs {
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+}
+
+.tablinks {
+   padding: 10px 20px;
+   cursor: pointer;
+   background-color: #f1f1f1;
+   border: 1px solid #ccc;
+   margin-right: 5px;
+}
+
+.tablinks.active {
+   background-color: #0077b5;
+   color: white;
+}
+
+.tabcontent {
+   display: none;
+   padding: 20px;
+   border: 1px solid #ccc;
+   border-top: none;
+}
+
+.tabcontent.active {
+   display: block;
+}
+</style>
+JavaScript
+liquid
+Copy
+Edit
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const tabLinks = document.querySelectorAll(".tablinks");
+    const tabContents = document.querySelectorAll(".tabcontent");
+
+    tabLinks.forEach(function(link) {
+        link.addEventListener("click", function(event) {
+            const target = event.currentTarget;
+            const country = target.dataset.country;
+
+            tabContents.forEach(function(content) {
+                content.classList.remove("active");
+            });
+
+            tabLinks.forEach(function(link) {
+                link.classList.remove("active");
+            });
+
+            document.getElementById(country).classList.add("active");
+            target.classList.add("active");
+        });
+    });
+});
+</script>
+
+{% schema %}
+{
+  "name": "tab-switch",
+  "settings": [
+    {
+      "type": "url",
+      "id": "portfolio_link",
+      "label": "Portfolio Link"
+    },
+    {
+      "type": "url",
+      "id": "dribbble_link",
+      "label": "Dribbble Link"
+    },
+    {
+      "type": "url",
+      "id": "linkedin_link",
+      "label": "LinkedIn Link"
+    },
+    {
+      "type": "text",
+      "id": "tab_1_title",
+      "label": "Tab 1 Title",
+      "default": "Tab 1"
+    },
+    {
+      "type": "textarea",
+      "id": "tab_1_content",
+      "label": "Tab 1 Content",
+      "default": "Content for Tab 1"
+    },
+    {
+      "type": "text",
+      "id": "tab_2_title",
+      "label": "Tab 2 Title",
+      "default": "Tab 2"
+    },
+    {
+      "type": "textarea",
+      "id": "tab_2_content",
+      "label": "Tab 2 Content",
+      "default": "Content for Tab 2"
+    },
+    {
+      "type": "text",
+      "id": "tab_3_title",
+      "label": "Tab 3 Title",
+      "default": "Tab 3"
+    },
+    {
+      "type": "textarea",
+      "id": "tab_3_content",
+      "label": "Tab 3 Content",
+      "default": "Content for Tab 3"
+    }
+  ]
+}
+{% endschema %}
