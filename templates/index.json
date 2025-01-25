@@ -105,10 +105,25 @@
         "wrap_around": "true",
         "mr": 16
       }
+    },
+    "shopify_tutorial_MY4bYU": {
+      "type": "shopify-tutorial",
+      "settings": {
+        "text_setting": "This is my first setting",
+        "textarea_setting": "",
+        "richtext_setting": "",
+        "inline_richtext_setting": "",
+        "range_setting": 10,
+        "select_setting": "Value 1",
+        "checkbox_setting": true,
+        "color_setting": "",
+        "colorbackground_setting": ""
+      }
     }
   },
   "order": [
     "image_banner",
-    "caraousel_slider_RURiiT"
+    "caraousel_slider_RURiiT",
+    "shopify_tutorial_MY4bYU"
   ]
 }
