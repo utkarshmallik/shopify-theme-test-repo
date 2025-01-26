@@ -107,6 +107,15 @@
     }
   </style>
 </section>
+<script>document.addEventListener('scroll', function() {
+    const parallaxElements = document.querySelectorAll('.parallax-section');
+    parallaxElements.forEach(element => {
+      const speed = 0.5; // Adjust parallax speed
+      const offset = window.pageYOffset * speed;
+      element.style.backgroundPositionY = `${offset}px`;
+    });
+  });
+  </script>
 
 {% schema %}
 {
