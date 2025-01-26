@@ -1,7 +1,7 @@
 <section class="premium-section" id="premium-collection">
   <div class="left-block">
     <div class="image">
-      <!-- Dynamic image from Shopify store with height and width attributes -->
+      <!-- Dynamic image from Shopify store -->
       <img src="{{ section.settings.image | img_url: 'original' }}" alt="Premium Image" width="600" height="400" />
     </div>
   </div>
@@ -19,49 +19,74 @@
     <div class="premium-highlights">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-4 col-xs-6">
+          <!-- Video 1 -->
+          <div class="col-md-2 col-xs-6">
+            {% if section.settings.video_1 %}
             <div class="video-swatch">
-              <video src="{{ section.settings.video_1_url }}" class="video" autoplay loop muted></video>
+              <video src="{{ section.settings.video_1 | file_url }}" class="video" autoplay loop muted></video>
             </div>
             <p class="highlight-text">{{ section.settings.video_1_title }}</p>
+            {% endif %}
           </div>
-          <div class="col-md-4 col-xs-6">
+
+          <!-- Video 2 -->
+          <div class="col-md-2 col-xs-6">
+            {% if section.settings.video_2 %}
             <div class="video-swatch">
-              <video src="{{ section.settings.video_2_url }}" class="video" autoplay loop muted></video>
+              <video src="{{ section.settings.video_2 | file_url }}" class="video" autoplay loop muted></video>
             </div>
             <p class="highlight-text">{{ section.settings.video_2_title }}</p>
+            {% endif %}
           </div>
-          <div class="col-md-4 col-xs-6">
+
+          <!-- Video 3 -->
+          <div class="col-md-2 col-xs-6">
+            {% if section.settings.video_3 %}
             <div class="video-swatch">
-              <video src="{{ section.settings.video_3_url }}" class="video" autoplay loop muted></video>
+              <video src="{{ section.settings.video_3 | file_url }}" class="video" autoplay loop muted></video>
             </div>
             <p class="highlight-text">{{ section.settings.video_3_title }}</p>
+            {% endif %}
           </div>
-          <div class="col-md-4 col-xs-6">
+
+          <!-- Video 4 -->
+          <div class="col-md-2 col-xs-6">
+            {% if section.settings.video_4 %}
             <div class="video-swatch">
-              <video src="{{ section.settings.video_4_url }}" class="video" autoplay loop muted></video>
+              <video src="{{ section.settings.video_4 | file_url }}" class="video" autoplay loop muted></video>
             </div>
             <p class="highlight-text">{{ section.settings.video_4_title }}</p>
+            {% endif %}
           </div>
-          <div class="col-md-4 col-xs-6">
+
+          <!-- Video 5 -->
+          <div class="col-md-2 col-xs-6">
+            {% if section.settings.video_5 %}
             <div class="video-swatch">
-              <video src="{{ section.settings.video_5_url }}" class="video" autoplay loop muted></video>
+              <video src="{{ section.settings.video_5 | file_url }}" class="video" autoplay loop muted></video>
             </div>
             <p class="highlight-text">{{ section.settings.video_5_title }}</p>
+            {% endif %}
           </div>
-          <div class="col-md-4 col-xs-6">
+
+          <!-- Video 6 -->
+          <div class="col-md-2 col-xs-6">
+            {% if section.settings.video_6 %}
             <div class="video-swatch">
-              <video src="{{ section.settings.video_6_url }}" class="video" autoplay loop muted></video>
+              <video src="{{ section.settings.video_6 | file_url }}" class="video" autoplay loop muted></video>
             </div>
             <p class="highlight-text">{{ section.settings.video_6_title }}</p>
+            {% endif %}
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 <style>
-    .premium-section {
+/* Premium Section Styles */
+.premium-section {
     display: flex;
     flex-direction: column-reverse;
     background: #f7f7f7;
@@ -134,6 +159,10 @@
         padding-right: 15px;
         padding-left: 15px;
     }
+
+    .col-md-2 {
+        width: 16.66666667%;
+    }
 }
 
 .container-fluid {
@@ -149,14 +178,14 @@
 }
 </style>
 
-{% schema  %} 
+{% schema %}
 {
   "name": "Premium Collection",
   "settings": [
     {
       "type": "image_picker",
       "id": "image",
-      "label": "Premium Image"
+      "label": "Premium Image"       
     },
     {
       "type": "text",
@@ -174,12 +203,12 @@
       "type": "video",
       "id": "video_1",
       "label": "Video 1"
-      
     },
     {
       "type": "text",
       "id": "video_1_title",
-      "label": "Video 1 Title"
+      "label": "Video 1 Title",
+      "default": "Custom Design Process"
     },
     {
       "type": "video",
@@ -189,7 +218,8 @@
     {
       "type": "text",
       "id": "video_2_title",
-      "label": "Video 2 Title"
+      "label": "Video 2 Title",
+      "default": "Precision Crafting"
     },
     {
       "type": "video",
@@ -199,7 +229,8 @@
     {
       "type": "text",
       "id": "video_3_title",
-      "label": "Video 3 Title"
+      "label": "Video 3 Title",
+      "default": "Advanced Equipment"
     },
     {
       "type": "video",
@@ -209,7 +240,8 @@
     {
       "type": "text",
       "id": "video_4_title",
-      "label": "Video 4 Title"
+      "label": "Video 4 Title",
+      "default": "Body Type Focus"
     },
     {
       "type": "video",
@@ -219,7 +251,8 @@
     {
       "type": "text",
       "id": "video_5_title",
-      "label": "Video 5 Title"
+      "label": "Video 5 Title",
+      "default": "Years of Patterns"
     },
     {
       "type": "video",
@@ -229,12 +262,13 @@
     {
       "type": "text",
       "id": "video_6_title",
-      "label": "Video 6 Title"
+      "label": "Video 6 Title",
+      "default": "Strict Quality Checks"
     }
   ],
   "presets": [
     {
-        "name": "Video-swatches"
+        "name": "video-swatches"
     }
   ]
 }
