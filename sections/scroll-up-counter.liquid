@@ -98,7 +98,7 @@
     let isCounting = false;
 
     function startCounting(element, countValue, duration) {
-      const increment = Math.ceil(countValue / (duration / 10));
+      const increment = Math.ceil(countValue / (duration / 3));
       let count = 0;
       const interval = setInterval(function() {
         count += increment;
