@@ -1,0 +1,161 @@
+<section class="gif-swatches-section" id="gif-swatches">
+  <div class="section-container">
+    <!-- Heading Section -->
+    <div class="section-heading">
+      <h1>{{ section.settings.heading }}</h1>
+    </div>
+
+    <!-- Text Block Below Heading -->
+    <div class="text-block">
+      <h3>{{ section.settings.inline_richtext_setting }}</h3>
+    </div>
+
+    <!-- GIF Swatches -->
+    <div class="gif-swatches-container">
+      {% for block in section.blocks %}
+        <div class="gif-swatch">
+          {% if block.settings.gif %}
+            <!-- Display the GIF -->
+            <img src="{{ block.settings.gif | img_url: 'original' }}" 
+                 alt="{{ block.settings.title }}" 
+                 class="gif" 
+                 width="100" 
+                 height="100" />
+          {% endif %}
+          {% if block.settings.title %}
+            <p class="gif-title">{{ block.settings.title }}</p>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <style>
+    .gif-swatches-section {
+      padding: 60px 20px;
+      background: linear-gradient(185deg, #b89d11, #d1d1ad);
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    .section-heading h1 {
+      font-size: 36px;
+      color: #222;
+      font-weight: 600;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .text-block h3 {
+      font-size: 18px;
+      color: #777;
+      font-weight: 400;
+      margin-bottom: 40px;
+      letter-spacing: 0.5px;
+    }
+
+    .gif-swatches-container {
+      display: grid;
+      grid-template-columns: repeat({{ section.settings.swatches_per_row }}, 1fr); /* Dynamic number of columns */
+      gap: 20px;
+      justify-items: center;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .gif-swatch {
+      /* width: 120px; */
+      text-align: center;
+      padding: 20px;
+      /* background-color: #fff; */
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .gif-swatch:hover {
+      transform: translateY(-10px); /* Lift effect on hover */
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .gif-swatch img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gif-swatch img:hover {
+      transform: scale(1.1); /* Enlarge GIF on hover */
+    }
+
+    .gif-title {
+      margin-top: 12px;
+      font-size: 14px;
+      color: #333;
+      font-weight: 500;
+      word-break: break-word;
+    }
+
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+      .gif-swatches-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 swatches per row on smaller screens */
+      }
+    }
+  </style>
+</section>
+
+{% schema %}
+{
+  "name": "GIF Swatches Section",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "GIF Swatches"
+    },
+    {
+        "type": "inline_richtext",
+        "id": "inline_richtext_setting",
+        "label": "Description"
+    },
+    {
+      "type": "range",
+      "id": "swatches_per_row",
+      "label": "Number of Swatches Per Row",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "default": 4
+    }
+  ],
+  "blocks": [
+    {
+      "type": "gif_swatch",
+      "name": "GIF Swatch",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "gif",
+          "label": "Upload GIF"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "GIF Title",
+          "default": "My GIF Title"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "GIF Swatches"
+    }
+  ]
+}
+{% endschema %}
