@@ -1,0 +1,280 @@
+<div class="main-container">
+  <h2 class="headline textJump" data-splitting="">jumping</h2>
+  <h2 class="headline textFlip" data-splitting="">flipping</h2>
+  <h2 class="headline textBounce" data-splitting="">bouncing</h2>
+  <h2 class="headline textFloat" data-splitting="">floating</h2>
+  <h2 class="headline textJog" data-splitting="">jogging</h2>
+  <h2 class="headline textTwirl" data-splitting="">twirling</h2>
+  <h2 class="headline textShake" data-splitting="">shaking</h2>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/splitting@1.1.0/dist/splitting.min.js" defer></script>
+
+<div id="controls">
+  <button id="fullscreenBtn" class="btn" title="Toggle Fullscreen">&#x2922;</button>
+  <button id="upCaretBtn" class="btn" title="Go to last headline">⬆</button>
+  <button id="downCaretBtn" class="btn" title="Go to next headline">⬇</button>
+</div>
+
+{% stylesheet %}
+/* Include the Splitting library CSS */
+@import url("https://cdn.jsdelivr.net/npm/splitting@1.1.0/dist/splitting.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+$colors: #3399dd, #ff8888, #11bb99, #ff22cc, #ee7733, #ffcc99, #99dd33;
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+.container {
+  max-height: 100vh;
+  overflow-y: scroll;
+  position: relative;
+  scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.headline {
+  align-items: center;
+  background-color: var(--color);
+  display: flex;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  font-size: 6.0rem;
+  height: 100vh;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  scroll-snap-align: start;
+
+  @for $i from 1 through length($colors) {
+    &:nth-child(#{$i}) {
+      --color: #{nth($colors, $i)};
+    }
+  }
+}
+
+.word, .char {
+  animation-delay: var(--del);
+  animation-direction: var(--dir, normal);
+  animation-duration: var(--dur);
+  animation-iteration-count: var(--it, infinite);
+  animation-name: var(--name);
+  animation-timing-function: var(--tf);
+  animation-fill-mode: var(--fill, forwards);
+  display: inline-block;
+  position: relative;
+  transform-origin: 50% 100%;
+  z-index: 1;
+}
+
+/* Button Styling */
+#controls {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: rgba(255, 255, 255, 0.4);
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 1);
+}
+
+#fullscreenBtn {
+  font-size: 20px;
+}
+
+#upCaretBtn, #downCaretBtn {
+  position: fixed;
+  bottom: 90px;
+  right: 40px;
+  background-color: #333333;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+#upCaretBtn:hover, #downCaretBtn:hover {
+  background-color: #2877b0;
+  transform: scale(1.1);
+  font-size: 2.0rem;
+}
+
+#downCaretBtn {
+  bottom: 20px;
+}
+
+/* Animations */
+.textBounce { /* Add your textBounce animation here */ }
+.textFlip { /* Add your textFlip animation here */ }
+.textFloat { /* Add your textFloat animation here */ }
+.textJog { /* Add your textJog animation here */ }
+.textJump { /* Add your textJump animation here */ }
+.textShake { /* Add your textShake animation here */ }
+.textTwirl { /* Add your textTwirl animation here */ }
+{% endstylesheet %}
+
+{% javascript %}
+Splitting();
+
+// Fullscreen toggle functionality
+const fullscreenBtn = document.getElementById("fullscreenBtn");
+fullscreenBtn.addEventListener("click", toggleFullScreen);
+
+function toggleFullScreen() {
+  if (!document.fullscreenElement) {
+    document.documentElement.requestFullscreen();
+  } else {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    }
+  }
+}
+
+// caret buttons
+let idx = 0;
+let sxn = document.querySelectorAll('h2');
+for (let i = 0; i < sxn.length; i++) {
+  sxn[i].setAttribute('data-id', i);
+}
+
+document.addEventListener('click', move, false);
+
+function move(e) {
+  if (e.target.id === 'upCaretBtn') {
+    idx--;
+    if (idx < 0) {
+      idx = sxn.length - 1; // Loop to the last section
+    }
+  } else if (e.target.id === 'downCaretBtn') {
+    idx++;
+    if (idx > sxn.length - 1) {
+      idx = 0; // Loop back to the first section
+    }
+  } else if (e.target.tagName === 'SECTION') {
+    idx = parseInt(e.target.getAttribute('data-id'), 10);
+  }
+  idxScroll(idx);
+}
+
+function idxScroll(idx) {
+  let act = document.querySelector('.active');
+  if (act) {
+    act.classList.remove('active'); // Remove active class
+  }
+  let x = sxn[idx];
+  x.classList.add('active'); // Add active class to the new section
+  x.scrollIntoView({
+    behavior: 'smooth',
+  });
+}
+{% endjavascript %}
+{% schema %}
+{
+  "name": "Animated Headlines",
+  "settings": [
+    {
+      "type": "text",
+      "id": "headline_1",
+      "label": "Headline 1",
+      "default": "Jumping"
+    },
+    {
+      "type": "text",
+      "id": "headline_2",
+      "label": "Headline 2",
+      "default": "Flipping"
+    },
+    {
+      "type": "text",
+      "id": "headline_3",
+      "label": "Headline 3",
+      "default": "Bouncing"
+    },
+    {
+      "type": "text",
+      "id": "headline_4",
+      "label": "Headline 4",
+      "default": "Floating"
+    },
+    {
+      "type": "text",
+      "id": "headline_5",
+      "label": "Headline 5",
+      "default": "Jogging"
+    },
+    {
+      "type": "text",
+      "id": "headline_6",
+      "label": "Headline 6",
+      "default": "Twirling"
+    },
+    {
+      "type": "text",
+      "id": "headline_7",
+      "label": "Headline 7",
+      "default": "Shaking"
+    },
+    {
+      "type": "range",
+      "id": "animation_duration",
+      "label": "Animation Speed (ms)",
+      "default": 1000,
+      "min": 500,
+      "max": 5000,
+      "step": 500
+    },
+    {
+      "type": "checkbox",
+      "id": "fullscreen_toggle",
+      "label": "Enable Fullscreen Toggle",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "scroll_controls",
+      "label": "Enable Scroll Controls (Up and Down)",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Default"
+}
+  ]
+}
+{% endschema %}
