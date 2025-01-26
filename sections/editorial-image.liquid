@@ -1,0 +1,94 @@
+{% schema %}
+    {
+      "name": "Styled Product Showcase",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "main_image",
+          "label": "Main Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "fabric_image",
+          "label": "Fabric Detail Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "button_image",
+          "label": "Button Detail Image"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Label",
+          "default": "March"
+        }
+      ],
+      "blocks": [
+        {
+          "type": "color_swatch",
+          "name": "Color Swatch",
+          "settings": [
+            {
+              "type": "color",
+              "id": "swatch_color",
+              "label": "Swatch Color"
+            }
+          ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "Product Showcase"
+        }
+      ]
+    }
+    {% endschema %}
+    
+    <div class="product-showcase">
+      <div class="images">
+        <img src="{{ section.settings.main_image | file_url }}" alt="Main Image" class="main-image" width="300" height="300">
+<img src="{{ section.settings.fabric_image | file_url }}" alt="Fabric Detail" class="fabric-image" width="300" height="300">
+<img src="{{ section.settings.button_image | file_url }}" alt="Button Detail" class="button-image" width="300" height="300">
+
+      </div>
+      <div class="button">
+        <p>{{ section.settings.button_text }}</p>
+      </div>
+      <div class="swatches">
+        {% for block in section.blocks %}
+          <div class="swatch" style="background-color: {{ block.settings.swatch_color }}"></div>
+        {% endfor %}
+      </div>
+    </div>
+    
+    <style>
+      .product-showcase {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        background-color: #f0f0f0;
+        padding: 20px;
+      }
+      .images img {
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .button {
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+        margin-top: 10px;
+      }
+      .swatches {
+        display: flex;
+        gap: 10px;
+      }
+      .swatch {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid #000;
+      }
+    </style>
