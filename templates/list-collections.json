@@ -324,11 +324,30 @@
         "hide_mobile": false,
         "hide_desktop": false
       }
+    },
+    "countdown_timer_t7RWwU": {
+      "type": "countdown-timer",
+      "settings": {
+        "bg_color": "#fff",
+        "timer_section_title": "Hurry Up!",
+        "timer_section_subtitle": "Sale ends in:",
+        "title_text_color": "#000",
+        "subtitle_text_color": "#000",
+        "timer_title_size": 24,
+        "timer_subtitle_size": 16,
+        "date_picker": "",
+        "timer_color": "#000",
+        "timer_section_btn_link": "",
+        "timer_section_btn_text": "Shop Now!",
+        "cta_bg_color": "#4770db",
+        "cta_text_color": "#fff"
+      }
     }
   },
   "order": [
     "test_parallax_QtkUn9",
     "rich_text_m3BUji",
+    "countdown_timer_t7RWwU",
     "videoswatches_tQf6xJ",
     "caraousel_slider_Ke4FgY",
     "main",
