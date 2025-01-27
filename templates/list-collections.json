@@ -96,6 +96,9 @@
     },
     "countdown_timer_t7RWwU": {
       "type": "countdown-timer",
+      "custom_css": [
+        ".{margin-bottom:300%;}"
+      ],
       "settings": {
         "bg_color": "#fff",
         "timer_section_title": "Hurry Up!",
