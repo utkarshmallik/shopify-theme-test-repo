@@ -9,23 +9,30 @@
  */
 {
   "sections": {
+    "countdown_timer_t7RWwU": {
+      "type": "countdown-timer",
+      "custom_css": [
+        ".section-padding {margin-bottom: 3%;}"
+      ],
+      "settings": {
+        "bg_color": "#ffffff",
+        "timer_section_title": "Hurry Up!",
+        "timer_section_subtitle": "Sale ends in:",
+        "title_text_color": "#000000",
+        "subtitle_text_color": "#680909",
+        "timer_title_size": 37,
+        "timer_subtitle_size": 27,
+        "date_picker": "01/28/2025",
+        "timer_color": "#f20000",
+        "timer_section_btn_link": "shopify://collections/shoe",
+        "timer_section_btn_text": "Shop Now!",
+        "cta_bg_color": "#c77575",
+        "cta_text_color": "#000000"
+      }
+    },
     "test_parallax_QtkUn9": {
       "type": "test-parallax",
       "blocks": {
-        "text_f7fKfm": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/5362a828-0f5b-4d17-a6c5-d0677dc89baa_1000x1000_7106042a-0057-4b0c-8e90-f7cbc523e10d.png",
-            "txt1-hd1": "",
-            "parallax-h": "h2",
-            "txt1-hd2": "",
-            "parallax-subh": "h3",
-            "par1_showbutton": true,
-            "par1_button_label": "",
-            "par1_button_link": ""
-          }
-        },
         "text_XyKpmn": {
           "type": "text",
           "settings": {
@@ -41,7 +48,6 @@
         }
       },
       "block_order": [
-        "text_f7fKfm",
         "text_XyKpmn"
       ],
       "settings": {
@@ -58,23 +64,58 @@
         "par_opacity": 50
       }
     },
-    "countdown_timer_t7RWwU": {
-      "type": "countdown-timer",
-      "custom_css": [],
+    "rich_text_m3BUji": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_A9aTmd": {
+          "type": "heading",
+          "settings": {
+            "heading": "NIKE FOOTBALL",
+            "heading_size": "h2"
+          }
+        },
+        "heading_YtNePY": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>ENERGY PACK</strong>",
+            "heading_size": "h0"
+          }
+        },
+        "heading_7dCYrf": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>THE ENERGY YOU NEED TO REACH NEW LEVEL</strong>",
+            "heading_size": "h2"
+          }
+        },
+        "button_zrFwcc": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP",
+            "button_link": "shopify://collections/clctn",
+            "button_style_secondary": false,
+            "button_label_2": "SHOP",
+            "button_link_2": "shopify://collections/shoe",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_A9aTmd",
+        "heading_YtNePY",
+        "heading_7dCYrf",
+        "button_zrFwcc"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {margin-top: 5%; margin-bottom: 5%;}"
+      ],
       "settings": {
-        "bg_color": "#000000",
-        "timer_section_title": "Hurry Up!",
-        "timer_section_subtitle": "Sale ends in:",
-        "title_text_color": "#ffffff",
-        "subtitle_text_color": "#ffffff",
-        "timer_title_size": 37,
-        "timer_subtitle_size": 27,
-        "date_picker": "01/28/2025",
-        "timer_color": "#f20000",
-        "timer_section_btn_link": "shopify://collections/shoe",
-        "timer_section_btn_text": "Shop Now!",
-        "cta_bg_color": "#c77575",
-        "cta_text_color": "#000000"
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "rich_text_nD7iPt": {
@@ -96,7 +137,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "scheme-4",
+        "color_scheme": "",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
@@ -160,8 +201,8 @@
       ],
       "settings": {
         "product": "shoe-1",
-        "color_scheme": "scheme-4",
-        "secondary_background": false,
+        "color_scheme": "",
+        "secondary_background": true,
         "media_size": "small",
         "constrain_to_viewport": true,
         "media_fit": "contain",
@@ -171,60 +212,6 @@
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "rich_text_m3BUji": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_A9aTmd": {
-          "type": "heading",
-          "settings": {
-            "heading": "NIKE FOOTBALL",
-            "heading_size": "h2"
-          }
-        },
-        "heading_YtNePY": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>ENERGY PACK</strong>",
-            "heading_size": "h0"
-          }
-        },
-        "heading_7dCYrf": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>THE ENERGY YOU NEED TO REACH NEW LEVEL</strong>",
-            "heading_size": "h2"
-          }
-        },
-        "button_zrFwcc": {
-          "type": "button",
-          "settings": {
-            "button_label": "SHOP",
-            "button_link": "shopify://collections/clctn",
-            "button_style_secondary": false,
-            "button_label_2": "SHOP",
-            "button_link_2": "shopify://collections/shoe",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_A9aTmd",
-        "heading_YtNePY",
-        "heading_7dCYrf",
-        "button_zrFwcc"
-      ],
-      "custom_css": [
-        ".rich-text__wrapper {margin-top: 5%; margin-bottom: 5%;}"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-4",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
       }
     },
     "collection_list_nTnipQ": {
@@ -252,7 +239,7 @@
         "heading_size": "h1",
         "image_ratio": "square",
         "columns_desktop": 2,
-        "color_scheme": "scheme-4",
+        "color_scheme": "",
         "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
@@ -328,8 +315,8 @@
       ],
       "settings": {
         "heading": "SPONSERS",
-        "heading-font-color": "#ffffff",
-        "main-bg-color": "#000000",
+        "heading-font-color": "#000000",
+        "main-bg-color": "",
         "heading-font-size": 35,
         "weight": "bolder"
       }
@@ -492,7 +479,7 @@
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "scheme-4",
+        "color_scheme": "",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -572,11 +559,11 @@
     }
   },
   "order": [
-    "test_parallax_QtkUn9",
     "countdown_timer_t7RWwU",
+    "test_parallax_QtkUn9",
+    "rich_text_m3BUji",
     "rich_text_nD7iPt",
     "featured_product_pKcmBU",
-    "rich_text_m3BUji",
     "collection_list_nTnipQ",
     "test_testimonial_MmbYwc",
     "videoswatches_tQf6xJ",
