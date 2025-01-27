@@ -23,6 +23,13 @@
             "swatch_shape": "circle"
           }
         },
+        "popup_dMzyVw": {
+          "type": "popup",
+          "settings": {
+            "text": "SIZE-CHART",
+            "page": "size-chart"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {}
@@ -58,6 +65,7 @@
       "block_order": [
         "title",
         "variant_picker",
+        "popup_dMzyVw",
         "price",
         "custom_liquid_6YqL4R",
         "quantity_selector",
