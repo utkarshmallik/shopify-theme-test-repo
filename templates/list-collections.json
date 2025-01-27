@@ -112,11 +112,68 @@
         "columns_desktop": 3,
         "columns_mobile": "2"
       }
+    },
+    "multicolumn_XPKxjD": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_V4YmXm": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/jakob-owens-JzJSybPFb3s-unsplash_58f6d3ae-4dfd-41aa-ac91-4d98445f82e9.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "BUY VARIANTS",
+            "link": ""
+          }
+        },
+        "column_gLxVM3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/fachry-zella-devandra-bNSdIkCBJOs-unsplash_cf872550-6d09-400d-9202-5344e376af34.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "BUY VARIANTS",
+            "link": ""
+          }
+        },
+        "column_qkm8xm": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/maksim-larin-NOpsC3nWTzY-unsplash_768a2e5c-228f-491d-b98f-df27b20a377f.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "BUY VARIANTS",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_V4YmXm",
+        "column_gLxVM3",
+        "column_qkm8xm"
+      ],
+      "settings": {
+        "title": "MORE FROM US",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "videoswatches_tQf6xJ",
     "caraousel_slider_Ke4FgY",
-    "main"
+    "main",
+    "multicolumn_XPKxjD"
   ]
 }
