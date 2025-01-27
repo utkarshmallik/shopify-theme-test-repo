@@ -9,6 +9,40 @@
  */
 {
   "sections": {
+    "test_parallax_QtkUn9": {
+      "type": "test-parallax",
+      "blocks": {
+        "text_XyKpmn": {
+          "type": "text",
+          "settings": {
+            "image": "shopify://shop_images/alexander-rotker-l8p1aWZqHvE-unsplash_487a6849-a855-4e4e-98ca-9ca10928d1db.jpg",
+            "txt1-hd1": "",
+            "parallax-h": "h2",
+            "txt1-hd2": "",
+            "parallax-subh": "h3",
+            "par1_showbutton": true,
+            "par1_button_label": "",
+            "par1_button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_XyKpmn"
+      ],
+      "settings": {
+        "paral-full": true,
+        "par_img_sz": "400",
+        "par_hd_sz": "55",
+        "par_subhd_sz": "25",
+        "par_button_sz": "25",
+        "par_letter_sp": "1",
+        "par_txt_align": "left",
+        "par_txt_top_pos": "50",
+        "par-en-over": true,
+        "color_over": "#000000",
+        "par_opacity": 50
+      }
+    },
     "videoswatches_tQf6xJ": {
       "type": "videoswatches",
       "blocks": {
@@ -171,6 +205,7 @@
     }
   },
   "order": [
+    "test_parallax_QtkUn9",
     "videoswatches_tQf6xJ",
     "caraousel_slider_Ke4FgY",
     "main",
