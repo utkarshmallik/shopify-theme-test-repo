@@ -12,12 +12,9 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
+        "title": {
+          "type": "title",
+          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -25,10 +22,6 @@
             "picker_type": "button",
             "swatch_shape": "circle"
           }
-        },
-        "title": {
-          "type": "title",
-          "settings": {}
         },
         "custom_liquid_6YqL4R": {
           "type": "custom_liquid",
@@ -63,9 +56,8 @@
         }
       },
       "block_order": [
-        "vendor",
-        "variant_picker",
         "title",
+        "variant_picker",
         "custom_liquid_6YqL4R",
         "price",
         "quantity_selector",
@@ -79,7 +71,7 @@
         "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "contain",
-        "gallery_layout": "stacked",
+        "gallery_layout": "thumbnail",
         "media_position": "left",
         "image_zoom": "lightbox",
         "mobile_thumbnails": "hide",
