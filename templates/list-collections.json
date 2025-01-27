@@ -70,7 +70,7 @@
         "text_gF7Mcm": {
           "type": "text",
           "settings": {
-            "text": "{{ section.settings.product.vendor }}",
+            "text": "",
             "text_style": "uppercase"
           }
         },
