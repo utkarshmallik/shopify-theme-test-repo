@@ -9,6 +9,55 @@
  */
 {
   "sections": {
+    "test_parallax_QtkUn9": {
+      "type": "test-parallax",
+      "blocks": {
+        "text_f7fKfm": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/5362a828-0f5b-4d17-a6c5-d0677dc89baa_1000x1000_7106042a-0057-4b0c-8e90-f7cbc523e10d.png",
+            "txt1-hd1": "",
+            "parallax-h": "h2",
+            "txt1-hd2": "",
+            "parallax-subh": "h3",
+            "par1_showbutton": true,
+            "par1_button_label": "",
+            "par1_button_link": ""
+          }
+        },
+        "text_XyKpmn": {
+          "type": "text",
+          "settings": {
+            "image": "shopify://shop_images/alexander-rotker-l8p1aWZqHvE-unsplash_487a6849-a855-4e4e-98ca-9ca10928d1db.jpg",
+            "txt1-hd1": "",
+            "parallax-h": "h2",
+            "txt1-hd2": "",
+            "parallax-subh": "h3",
+            "par1_showbutton": true,
+            "par1_button_label": "",
+            "par1_button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_f7fKfm",
+        "text_XyKpmn"
+      ],
+      "settings": {
+        "paral-full": true,
+        "par_img_sz": "600",
+        "par_hd_sz": "55",
+        "par_subhd_sz": "25",
+        "par_button_sz": "25",
+        "par_letter_sp": "1",
+        "par_txt_align": "left",
+        "par_txt_top_pos": "50",
+        "par-en-over": true,
+        "color_over": "#000000",
+        "par_opacity": 50
+      }
+    },
     "countdown_timer_t7RWwU": {
       "type": "countdown-timer",
       "custom_css": [
@@ -28,94 +77,6 @@
         "timer_section_btn_text": "Shop Now!",
         "cta_bg_color": "#c77575",
         "cta_text_color": "#000000"
-      }
-    },
-    "test_parallax_QtkUn9": {
-      "type": "test-parallax",
-      "blocks": {
-        "text_XyKpmn": {
-          "type": "text",
-          "settings": {
-            "image": "shopify://shop_images/alexander-rotker-l8p1aWZqHvE-unsplash_487a6849-a855-4e4e-98ca-9ca10928d1db.jpg",
-            "txt1-hd1": "",
-            "parallax-h": "h2",
-            "txt1-hd2": "",
-            "parallax-subh": "h3",
-            "par1_showbutton": true,
-            "par1_button_label": "",
-            "par1_button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_XyKpmn"
-      ],
-      "settings": {
-        "paral-full": true,
-        "par_img_sz": "600",
-        "par_hd_sz": "55",
-        "par_subhd_sz": "25",
-        "par_button_sz": "25",
-        "par_letter_sp": "1",
-        "par_txt_align": "left",
-        "par_txt_top_pos": "50",
-        "par-en-over": true,
-        "color_over": "#000000",
-        "par_opacity": 50
-      }
-    },
-    "rich_text_m3BUji": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_A9aTmd": {
-          "type": "heading",
-          "settings": {
-            "heading": "NIKE FOOTBALL",
-            "heading_size": "h2"
-          }
-        },
-        "heading_YtNePY": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>ENERGY PACK</strong>",
-            "heading_size": "h0"
-          }
-        },
-        "heading_7dCYrf": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>THE ENERGY YOU NEED TO REACH NEW LEVEL</strong>",
-            "heading_size": "h2"
-          }
-        },
-        "button_zrFwcc": {
-          "type": "button",
-          "settings": {
-            "button_label": "SHOP",
-            "button_link": "shopify://collections/clctn",
-            "button_style_secondary": false,
-            "button_label_2": "SHOP",
-            "button_link_2": "shopify://collections/shoe",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_A9aTmd",
-        "heading_YtNePY",
-        "heading_7dCYrf",
-        "button_zrFwcc"
-      ],
-      "custom_css": [
-        ".rich-text__wrapper {margin-top: 5%; margin-bottom: 5%;}"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-4",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
       }
     },
     "rich_text_nD7iPt": {
@@ -211,6 +172,60 @@
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "rich_text_m3BUji": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_A9aTmd": {
+          "type": "heading",
+          "settings": {
+            "heading": "NIKE FOOTBALL",
+            "heading_size": "h2"
+          }
+        },
+        "heading_YtNePY": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>ENERGY PACK</strong>",
+            "heading_size": "h0"
+          }
+        },
+        "heading_7dCYrf": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>THE ENERGY YOU NEED TO REACH NEW LEVEL</strong>",
+            "heading_size": "h2"
+          }
+        },
+        "button_zrFwcc": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP",
+            "button_link": "shopify://collections/clctn",
+            "button_style_secondary": false,
+            "button_label_2": "SHOP",
+            "button_link_2": "shopify://collections/shoe",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_A9aTmd",
+        "heading_YtNePY",
+        "heading_7dCYrf",
+        "button_zrFwcc"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {margin-top: 5%; margin-bottom: 5%;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "collection_list_nTnipQ": {
@@ -558,11 +573,11 @@
     }
   },
   "order": [
-    "countdown_timer_t7RWwU",
     "test_parallax_QtkUn9",
-    "rich_text_m3BUji",
+    "countdown_timer_t7RWwU",
     "rich_text_nD7iPt",
     "featured_product_pKcmBU",
+    "rich_text_m3BUji",
     "collection_list_nTnipQ",
     "test_testimonial_MmbYwc",
     "videoswatches_tQf6xJ",
