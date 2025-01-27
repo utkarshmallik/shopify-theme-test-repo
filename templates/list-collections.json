@@ -49,21 +49,22 @@
         "heading_A9aTmd": {
           "type": "heading",
           "settings": {
-            "heading": "NIKE FOOTBALL",
-            "heading_size": "h2"
+            "heading": "<strong>NIKE FOOTBALL</strong>",
+            "heading_size": "h1"
           }
         },
         "heading_YtNePY": {
           "type": "heading",
           "settings": {
             "heading": "<strong>ENERGY PACK</strong>",
-            "heading_size": "h1"
+            "heading_size": "h0"
           }
         },
-        "text_fnGtY7": {
-          "type": "text",
+        "heading_7dCYrf": {
+          "type": "heading",
           "settings": {
-            "text": "<h4><strong>THE ENERGY YOU NEED TO REACH NEW LEVEL</strong></h4>"
+            "heading": "<strong>THE ENERGY YOU NEED TO REACH NEW LEVEL</strong>",
+            "heading_size": "h2"
           }
         },
         "button_zrFwcc": {
@@ -81,7 +82,7 @@
       "block_order": [
         "heading_A9aTmd",
         "heading_YtNePY",
-        "text_fnGtY7",
+        "heading_7dCYrf",
         "button_zrFwcc"
       ],
       "settings": {
