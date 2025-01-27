@@ -9,106 +9,104 @@
  */
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "test_parallax_DpjDcA": {
+      "type": "test-parallax",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "text_hKfAja": {
+          "type": "text",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
+            "image": "shopify://shop_images/fachry-zella-devandra-bNSdIkCBJOs-unsplash.jpg",
+            "txt1-hd1": "",
+            "parallax-h": "h2",
+            "txt1-hd2": "",
+            "parallax-subh": "h3",
+            "par1_showbutton": true,
+            "par1_button_label": "",
+            "par1_button_link": ""
           }
         },
-        "button": {
-          "type": "buttons",
+        "text_KcHxda": {
+          "type": "text",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "image": "shopify://shop_images/nike-logo.jpg",
+            "txt1-hd1": "",
+            "parallax-h": "h2",
+            "txt1-hd2": "",
+            "parallax-subh": "h3",
+            "par1_showbutton": true,
+            "par1_button_label": "",
+            "par1_button_link": ""
+          }
+        },
+        "text_6rqJXx": {
+          "type": "text",
+          "settings": {
+            "image": "shopify://shop_images/alexander-rotker-l8p1aWZqHvE-unsplash.jpg",
+            "txt1-hd1": "",
+            "parallax-h": "h2",
+            "txt1-hd2": "",
+            "parallax-subh": "h3",
+            "par1_showbutton": true,
+            "par1_button_label": "",
+            "par1_button_link": ""
           }
         }
       },
       "block_order": [
-        "heading",
-        "button"
+        "text_hKfAja",
+        "text_KcHxda",
+        "text_6rqJXx"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "paral-full": true,
+        "par_img_sz": "1000",
+        "par_hd_sz": "55",
+        "par_subhd_sz": "25",
+        "par_button_sz": "25",
+        "par_letter_sp": "1",
+        "par_txt_align": "left",
+        "par_txt_top_pos": "50",
+        "par-en-over": true,
+        "color_over": "#121212",
+        "par_opacity": 32
       }
     },
-    "caraousel_slider_RURiiT": {
-      "type": "caraousel-slider",
+    "test_parallax_MFEbY6": {
+      "type": "test-parallax",
       "blocks": {
-        "carousel_aPEehU": {
-          "type": "carousel",
+        "text_DJYRhV": {
+          "type": "text",
           "settings": {
-            "title": "Full Name",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
-          }
-        },
-        "carousel_kY8hRn": {
-          "type": "carousel",
-          "settings": {
-            "title": "Full Name",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
-          }
-        },
-        "carousel_34FPPR": {
-          "type": "carousel",
-          "settings": {
-            "title": "Full Name",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
-          }
-        },
-        "carousel_he3byP": {
-          "type": "carousel",
-          "settings": {
-            "title": "Full Name",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
-          }
-        },
-        "carousel_agMHnP": {
-          "type": "carousel",
-          "settings": {
-            "title": "Full Name",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+            "txt1-hd1": "",
+            "parallax-h": "h2",
+            "txt1-hd2": "",
+            "parallax-subh": "h3",
+            "par1_showbutton": true,
+            "par1_button_label": "",
+            "par1_button_link": ""
           }
         }
       },
       "block_order": [
-        "carousel_aPEehU",
-        "carousel_kY8hRn",
-        "carousel_34FPPR",
-        "carousel_he3byP",
-        "carousel_agMHnP"
+        "text_DJYRhV"
       ],
       "settings": {
-        "bg": "",
-        "product": "",
-        "title": "Featured Collection Slider",
-        "image_ratio": "square",
-        "cell_align": "center",
-        "title_mb": 48,
-        "cell_width": "25%",
-        "wrap_around": "true",
-        "mr": 16
+        "paral-full": true,
+        "par_img_sz": "400",
+        "par_hd_sz": "55",
+        "par_subhd_sz": "25",
+        "par_button_sz": "25",
+        "par_letter_sp": "1",
+        "par_txt_align": "left",
+        "par_txt_top_pos": "50",
+        "par-en-over": true,
+        "color_over": "#000000",
+        "par_opacity": 50
       }
     }
   },
   "order": [
-    "image_banner",
-    "caraousel_slider_RURiiT"
+    "test_parallax_DpjDcA",
+    "test_parallax_MFEbY6"
   ]
 }
