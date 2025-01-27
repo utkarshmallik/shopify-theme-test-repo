@@ -110,7 +110,7 @@
             "slide-text": "Your heading",
             "desc": "",
             "slide-heading-font-size": 20,
-            "slide-font-weight": "normal",
+            "slide-font-weight": "bold",
             "desc-size": 15
           }
         },
@@ -124,7 +124,7 @@
             "slide-text": "Your heading",
             "desc": "",
             "slide-heading-font-size": 20,
-            "slide-font-weight": "normal",
+            "slide-font-weight": "bold",
             "desc-size": 15
           }
         },
@@ -138,7 +138,7 @@
             "slide-text": "Your heading",
             "desc": "",
             "slide-heading-font-size": 20,
-            "slide-font-weight": "normal",
+            "slide-font-weight": "bold",
             "desc-size": 15
           }
         },
@@ -152,7 +152,7 @@
             "slide-text": "Your heading",
             "desc": "",
             "slide-heading-font-size": 20,
-            "slide-font-weight": "normal",
+            "slide-font-weight": "bold",
             "desc-size": 15
           }
         }
