@@ -11,13 +11,130 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "test_testimonial_rYQRKt": {
+      "type": "test-testimonial",
+      "blocks": {
+        "slide_iVwbfA": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/SoccerLoopGIFbyNike.gif",
+            "rahulcolor": "",
+            "desc-color": "",
+            "box-bg-color": "#249a00",
+            "slide-text": "Your heading",
+            "desc": "",
+            "slide-heading-font-size": 20,
+            "slide-font-weight": "normal",
+            "desc-size": 15
+          }
+        },
+        "slide_HEmk8W": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Beauty_Oil_3.png",
+            "rahulcolor": "",
+            "desc-color": "",
+            "box-bg-color": "#249a00",
+            "slide-text": "Your heading",
+            "desc": "",
+            "slide-heading-font-size": 20,
+            "slide-font-weight": "normal",
+            "desc-size": 15
+          }
+        },
+        "slide_KinYWg": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/boots-1638873_1920.jpg",
+            "rahulcolor": "",
+            "desc-color": "",
+            "box-bg-color": "#249a00",
+            "slide-text": "Your heading",
+            "desc": "",
+            "slide-heading-font-size": 20,
+            "slide-font-weight": "normal",
+            "desc-size": 15
+          }
+        },
+        "slide_A6RAM7": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Lipstick.png",
+            "rahulcolor": "",
+            "desc-color": "",
+            "box-bg-color": "#249a00",
+            "slide-text": "Your heading",
+            "desc": "",
+            "slide-heading-font-size": 20,
+            "slide-font-weight": "normal",
+            "desc-size": 15
+          }
+        }
+      },
+      "block_order": [
+        "slide_iVwbfA",
+        "slide_HEmk8W",
+        "slide_KinYWg",
+        "slide_A6RAM7"
+      ],
+      "settings": {
+        "heading": "OUR SPONSORS",
+        "heading-font-color": "",
+        "main-bg-color": "",
+        "heading-font-size": 42,
+        "weight": "bolder"
+      }
+    },
+    "scroll_up_counter_UK63fg": {
+      "type": "scroll-up-counter",
+      "blocks": {
+        "content_VrqfXC": {
+          "type": "Content",
+          "settings": {
+            "number": 1,
+            "label": "K",
+            "description": "description"
+          }
+        },
+        "content_PW3D7X": {
+          "type": "Content",
+          "settings": {
+            "number": 1,
+            "label": "K",
+            "description": "description"
+          }
+        },
+        "content_anHzVL": {
+          "type": "Content",
+          "settings": {
+            "number": 1,
+            "label": "K",
+            "description": "description"
+          }
+        }
+      },
+      "block_order": [
+        "content_VrqfXC",
+        "content_PW3D7X",
+        "content_anHzVL"
+      ],
+      "settings": {
+        "title": "Top Title",
+        "subtitle": "Subtitle",
+        "section_color_scheme": "",
+        "cell_align": "center"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "test_testimonial_rYQRKt",
+    "scroll_up_counter_UK63fg"
   ]
 }
