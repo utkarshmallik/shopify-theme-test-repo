@@ -447,6 +447,70 @@
         "columns_desktop": 3,
         "columns_mobile": "2"
       }
+    },
+    "compariosn_table_D4Md3b": {
+      "type": "compariosn-table",
+      "blocks": {
+        "table_WmD4HG": {
+          "type": "table",
+          "settings": {
+            "title": "title",
+            "headingchecked1": true,
+            "headingchecked2": true,
+            "headingchecked3": true
+          }
+        },
+        "table_3L9fw8": {
+          "type": "table",
+          "settings": {
+            "title": "title",
+            "headingchecked1": true,
+            "headingchecked2": true,
+            "headingchecked3": false
+          }
+        },
+        "table_TmiFWc": {
+          "type": "table",
+          "settings": {
+            "title": "title",
+            "headingchecked1": true,
+            "headingchecked2": false,
+            "headingchecked3": true
+          }
+        },
+        "button_zbDkRj": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "table_WmD4HG",
+        "table_3L9fw8",
+        "table_TmiFWc",
+        "button_zbDkRj"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/maksim-larin-NOpsC3nWTzY-unsplash_768a2e5c-228f-491d-b98f-df27b20a377f.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "heading1": "Heading 1",
+        "heading2": "Heading 2",
+        "heading3": "Heading 3"
+      }
     }
   },
   "order": [
@@ -459,6 +523,7 @@
     "test_testimonial_MmbYwc",
     "multicolumn_XPKxjD",
     "videoswatches_tQf6xJ",
-    "main"
+    "main",
+    "compariosn_table_D4Md3b"
   ]
 }
