@@ -64,6 +64,60 @@
         "par_opacity": 50
       }
     },
+    "rich_text_m3BUji": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_A9aTmd": {
+          "type": "heading",
+          "settings": {
+            "heading": "NIKE FOOTBALL",
+            "heading_size": "h2"
+          }
+        },
+        "heading_YtNePY": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>ENERGY PACK</strong>",
+            "heading_size": "h0"
+          }
+        },
+        "heading_7dCYrf": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>THE ENERGY YOU NEED TO REACH NEW LEVEL</strong>",
+            "heading_size": "h2"
+          }
+        },
+        "button_zrFwcc": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP",
+            "button_link": "shopify://collections/clctn",
+            "button_style_secondary": false,
+            "button_label_2": "SHOP",
+            "button_link_2": "shopify://collections/shoe",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_A9aTmd",
+        "heading_YtNePY",
+        "heading_7dCYrf",
+        "button_zrFwcc"
+      ],
+      "custom_css": [
+        ".rich-text__wrapper {margin-top: 5%; margin-bottom: 5%;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "rich_text_nD7iPt": {
       "type": "rich-text",
       "blocks": {
@@ -231,60 +285,6 @@
         "main-bg-color": "",
         "heading-font-size": 35,
         "weight": "bolder"
-      }
-    },
-    "rich_text_m3BUji": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_A9aTmd": {
-          "type": "heading",
-          "settings": {
-            "heading": "NIKE FOOTBALL",
-            "heading_size": "h2"
-          }
-        },
-        "heading_YtNePY": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>ENERGY PACK</strong>",
-            "heading_size": "h0"
-          }
-        },
-        "heading_7dCYrf": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>THE ENERGY YOU NEED TO REACH NEW LEVEL</strong>",
-            "heading_size": "h2"
-          }
-        },
-        "button_zrFwcc": {
-          "type": "button",
-          "settings": {
-            "button_label": "SHOP",
-            "button_link": "shopify://collections/clctn",
-            "button_style_secondary": false,
-            "button_label_2": "SHOP",
-            "button_link_2": "shopify://collections/shoe",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_A9aTmd",
-        "heading_YtNePY",
-        "heading_7dCYrf",
-        "button_zrFwcc"
-      ],
-      "custom_css": [
-        ".rich-text__wrapper {margin-top: 5%; margin-bottom: 5%;}"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
       }
     },
     "collection_list_nTnipQ": {
@@ -466,7 +466,7 @@
         "column_qkm8xm"
       ],
       "custom_css": [
-        ".multicolumn.background-primary .multicolumn-card {background: #99aea1 linear-gradient(rgba(var(--color-foreground), .04), rgba(var(--color-foreground), .04)); box-shadow: 5px 5px 5px #a5d4a6;}"
+        ".multicolumn.background-primary .multicolumn-card {background: #99aea1 linear-gradient( rgba(var(--color-foreground), 0.04), rgba(var(--color-foreground), 0.04) ); box-shadow: 5px 5px 5px #a5d4a6;}"
       ],
       "settings": {
         "title": "MORE FROM US",
@@ -560,11 +560,11 @@
   "order": [
     "countdown_timer_t7RWwU",
     "test_parallax_QtkUn9",
+    "rich_text_m3BUji",
     "rich_text_nD7iPt",
     "featured_product_pKcmBU",
-    "test_testimonial_MmbYwc",
-    "rich_text_m3BUji",
     "collection_list_nTnipQ",
+    "test_testimonial_MmbYwc",
     "videoswatches_tQf6xJ",
     "caraousel_slider_Ke4FgY",
     "main",
