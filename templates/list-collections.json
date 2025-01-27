@@ -97,7 +97,7 @@
     "countdown_timer_t7RWwU": {
       "type": "countdown-timer",
       "custom_css": [
-        ".{margin-bottom:300%;}"
+        ".section-padding{margin-bottom: 10%; margin-top: 5%;}"
       ],
       "settings": {
         "bg_color": "#fff",
