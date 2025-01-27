@@ -131,11 +131,11 @@
         "slide_WJTHWi"
       ],
       "settings": {
-        "heading": "ABOUT THE STORE",
-        "heading-font-color": "",
+        "heading": "SPONSERS",
+        "heading-font-color": "#000000",
         "main-bg-color": "",
-        "heading-font-size": 20,
-        "weight": "normal"
+        "heading-font-size": 35,
+        "weight": "bolder"
       }
     },
     "rich_text_m3BUji": {
@@ -181,7 +181,7 @@
         "button_zrFwcc"
       ],
       "custom_css": [
-        ".rich-text__wrapper {margin-top: 5%; margin-BOTTOM: 5%;}"
+        ".rich-text__wrapper {margin-top: 5%; margin-bottom: 5%;}"
       ],
       "settings": {
         "desktop_content_position": "center",
