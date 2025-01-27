@@ -28,10 +28,10 @@
             "image": "shopify://shop_images/fachry-zella-devandra-bNSdIkCBJOs-unsplash.jpg",
             "txt1-hd1": "",
             "parallax-h": "h2",
-            "txt1-hd2": "JUST DO IT",
+            "txt1-hd2": "",
             "parallax-subh": "h2",
             "par1_showbutton": true,
-            "par1_button_label": "",
+            "par1_button_label": "SHOP ALL",
             "par1_button_link": "shopify://collections/all"
           }
         }
@@ -41,7 +41,7 @@
       ],
       "settings": {
         "paral-full": true,
-        "par_img_sz": "1000",
+        "par_img_sz": "500",
         "par_hd_sz": "55",
         "par_subhd_sz": "25",
         "par_button_sz": "20",
