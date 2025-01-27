@@ -70,9 +70,67 @@
         "color_over": "#121212",
         "par_opacity": 32
       }
+    },
+    "multirow_cmbtk7": {
+      "type": "multirow",
+      "blocks": {
+        "row_YNAPkt": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Soccer_Loop_GIF_by_Nike.gif",
+            "caption": "",
+            "heading": "SAMPLE HEADING",
+            "text": "<p>EXPERINCE THE NEW GRIP</p>",
+            "button_label": "SHOP",
+            "button_link": "shopify://products/niek-shoes"
+          }
+        },
+        "row_y6eVTr": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/maksim-larin-NOpsC3nWTzY-unsplash.jpg",
+            "caption": "",
+            "heading": "SAMPLE HEADING",
+            "text": "<p>EXPERINCE THE NEW GRIP</p>",
+            "button_label": "SHOP",
+            "button_link": "shopify://products/niek-shoes"
+          }
+        },
+        "row_MR8kXn": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_YNAPkt",
+        "row_y6eVTr",
+        "row_MR8kXn"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "primary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "scheme-4",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "test_parallax_DpjDcA"
+    "test_parallax_DpjDcA",
+    "multirow_cmbtk7"
   ]
 }
