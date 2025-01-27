@@ -383,30 +383,6 @@
     "videoswatches_tQf6xJ": {
       "type": "videoswatches",
       "blocks": {
-        "gif_swatch_kJ3PWp": {
-          "type": "gif_swatch",
-          "settings": {
-            "title": "My GIF Title"
-          }
-        },
-        "gif_swatch_LLBENX": {
-          "type": "gif_swatch",
-          "settings": {
-            "title": "My GIF Title"
-          }
-        },
-        "gif_swatch_bJ4CKq": {
-          "type": "gif_swatch",
-          "settings": {
-            "title": "My GIF Title"
-          }
-        },
-        "gif_swatch_rt3b8M": {
-          "type": "gif_swatch",
-          "settings": {
-            "title": "My GIF Title"
-          }
-        },
         "gif_swatch_X4BALi": {
           "type": "gif_swatch",
           "settings": {
@@ -430,10 +406,6 @@
         }
       },
       "block_order": [
-        "gif_swatch_kJ3PWp",
-        "gif_swatch_LLBENX",
-        "gif_swatch_bJ4CKq",
-        "gif_swatch_rt3b8M",
         "gif_swatch_X4BALi",
         "gif_swatch_F7Ftfq",
         "gif_swatch_Aya4UH"
