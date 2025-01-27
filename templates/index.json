@@ -9,43 +9,39 @@
  */
 {
   "sections": {
+    "hero_video_CGDxNA": {
+      "type": "hero-video",
+      "settings": {
+        "heading": "",
+        "fullwidth": true,
+        "autoplay": true,
+        "controller": false,
+        "self_hosted_video": "shopify://files/videos/5155396-uhd_3840_2160_30fps.mp4"
+      }
+    },
     "test_parallax_DpjDcA": {
       "type": "test-parallax",
       "blocks": {
-        "text_KcHxda": {
-          "type": "text",
-          "settings": {
-            "image": "shopify://shop_images/nike-logo.jpg",
-            "txt1-hd1": "",
-            "parallax-h": "h2",
-            "txt1-hd2": "",
-            "parallax-subh": "h3",
-            "par1_showbutton": true,
-            "par1_button_label": "SHOP ALL",
-            "par1_button_link": "shopify://collections/all"
-          }
-        },
         "text_hKfAja": {
           "type": "text",
           "settings": {
             "image": "shopify://shop_images/fachry-zella-devandra-bNSdIkCBJOs-unsplash.jpg",
             "txt1-hd1": "",
             "parallax-h": "h2",
-            "txt1-hd2": "JUST DO IT",
+            "txt1-hd2": "",
             "parallax-subh": "h2",
             "par1_showbutton": true,
-            "par1_button_label": "",
+            "par1_button_label": "SHOP ALL",
             "par1_button_link": "shopify://collections/all"
           }
         }
       },
       "block_order": [
-        "text_KcHxda",
         "text_hKfAja"
       ],
       "settings": {
         "paral-full": true,
-        "par_img_sz": "1000",
+        "par_img_sz": "500",
         "par_hd_sz": "55",
         "par_subhd_sz": "25",
         "par_button_sz": "20",
@@ -123,15 +119,15 @@
         "description": "",
         "show_description": false,
         "description_style": "subtitle",
-        "collection": "clctn",
-        "products_to_show": 4,
-        "columns_desktop": 4,
+        "collection": "shoe",
+        "products_to_show": 5,
+        "columns_desktop": 5,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "outline",
         "enable_desktop_slider": false,
         "color_scheme": "scheme-4",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
@@ -145,6 +141,7 @@
     }
   },
   "order": [
+    "hero_video_CGDxNA",
     "test_parallax_DpjDcA",
     "multirow_cmbtk7",
     "featured_collection_rQyYtp"
