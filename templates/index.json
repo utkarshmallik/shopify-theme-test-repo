@@ -12,19 +12,6 @@
     "test_parallax_DpjDcA": {
       "type": "test-parallax",
       "blocks": {
-        "text_hKfAja": {
-          "type": "text",
-          "settings": {
-            "image": "shopify://shop_images/fachry-zella-devandra-bNSdIkCBJOs-unsplash.jpg",
-            "txt1-hd1": "",
-            "parallax-h": "h2",
-            "txt1-hd2": "JUST DO IT",
-            "parallax-subh": "h2",
-            "par1_showbutton": true,
-            "par1_button_label": "",
-            "par1_button_link": "shopify://collections/all"
-          }
-        },
         "text_KcHxda": {
           "type": "text",
           "settings": {
@@ -38,24 +25,23 @@
             "par1_button_link": "shopify://collections/all"
           }
         },
-        "text_6rqJXx": {
+        "text_hKfAja": {
           "type": "text",
           "settings": {
-            "image": "shopify://shop_images/alexander-rotker-l8p1aWZqHvE-unsplash.jpg",
+            "image": "shopify://shop_images/fachry-zella-devandra-bNSdIkCBJOs-unsplash.jpg",
             "txt1-hd1": "",
             "parallax-h": "h2",
-            "txt1-hd2": "",
-            "parallax-subh": "h3",
+            "txt1-hd2": "JUST DO IT",
+            "parallax-subh": "h2",
             "par1_showbutton": true,
-            "par1_button_label": "COLLECTIONS",
-            "par1_button_link": "shopify://collections"
+            "par1_button_label": "",
+            "par1_button_link": "shopify://collections/all"
           }
         }
       },
       "block_order": [
-        "text_hKfAja",
         "text_KcHxda",
-        "text_6rqJXx"
+        "text_hKfAja"
       ],
       "settings": {
         "paral-full": true,
