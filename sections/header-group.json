@@ -53,8 +53,8 @@
         "margin_bottom": 0,
         "padding_top": 20,
         "padding_bottom": 20,
-        "enable_transparent-header": true,
-        "color-transparent": "white"
+        "enable_transparent-header": false,
+        "color-transparent": ""
       }
     }
   },
