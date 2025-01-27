@@ -85,6 +85,9 @@
         "heading_7dCYrf",
         "button_zrFwcc"
       ],
+      "custom_css": [
+        ".rich-text__wrapper {margin-top: 5%;}"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
