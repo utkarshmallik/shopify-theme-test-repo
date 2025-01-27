@@ -97,6 +97,80 @@
         "padding_bottom": 52
       }
     },
+    "test_testimonial_MmbYwc": {
+      "type": "test-testimonial",
+      "blocks": {
+        "slide_7NiaBE": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/nike-logo.jpg",
+            "rahulcolor": "",
+            "desc-color": "",
+            "box-bg-color": "#249a00",
+            "slide-text": "Your heading",
+            "desc": "",
+            "slide-heading-font-size": 20,
+            "slide-font-weight": "normal",
+            "desc-size": 15
+          }
+        },
+        "slide_JR4xHF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/5362a828-0f5b-4d17-a6c5-d0677dc89baa_1000x1000_7106042a-0057-4b0c-8e90-f7cbc523e10d.png",
+            "rahulcolor": "",
+            "desc-color": "",
+            "box-bg-color": "#249a00",
+            "slide-text": "Your heading",
+            "desc": "",
+            "slide-heading-font-size": 20,
+            "slide-font-weight": "normal",
+            "desc-size": 15
+          }
+        },
+        "slide_hyhNa9": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/fachry-zella-devandra-bNSdIkCBJOs-unsplash.jpg",
+            "rahulcolor": "",
+            "desc-color": "",
+            "box-bg-color": "#249a00",
+            "slide-text": "Your heading",
+            "desc": "",
+            "slide-heading-font-size": 20,
+            "slide-font-weight": "normal",
+            "desc-size": 15
+          }
+        },
+        "slide_WJTHWi": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/wallpaper-903_256.gif",
+            "rahulcolor": "",
+            "desc-color": "",
+            "box-bg-color": "#249a00",
+            "slide-text": "Your heading",
+            "desc": "",
+            "slide-heading-font-size": 20,
+            "slide-font-weight": "normal",
+            "desc-size": 15
+          }
+        }
+      },
+      "block_order": [
+        "slide_7NiaBE",
+        "slide_JR4xHF",
+        "slide_hyhNa9",
+        "slide_WJTHWi"
+      ],
+      "settings": {
+        "heading": "ABOUT THE STORE",
+        "heading-font-color": "",
+        "main-bg-color": "",
+        "heading-font-size": 20,
+        "weight": "normal"
+      }
+    },
     "countdown_timer_t7RWwU": {
       "type": "countdown-timer",
       "custom_css": [
@@ -389,6 +463,7 @@
   "order": [
     "test_parallax_QtkUn9",
     "rich_text_m3BUji",
+    "test_testimonial_MmbYwc",
     "countdown_timer_t7RWwU",
     "videoswatches_tQf6xJ",
     "caraousel_slider_Ke4FgY",
