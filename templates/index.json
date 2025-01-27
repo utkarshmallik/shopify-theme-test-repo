@@ -16,7 +16,7 @@
           "type": "text",
           "settings": {
             "image": "shopify://shop_images/fachry-zella-devandra-bNSdIkCBJOs-unsplash.jpg",
-            "txt1-hd1": "NIKE",
+            "txt1-hd1": "",
             "parallax-h": "h2",
             "txt1-hd2": "JUST DO IT",
             "parallax-subh": "h2",
@@ -64,8 +64,8 @@
         "par_subhd_sz": "14",
         "par_button_sz": "20",
         "par_letter_sp": "1",
-        "par_txt_align": "center",
-        "par_txt_top_pos": "30",
+        "par_txt_align": "left",
+        "par_txt_top_pos": "10",
         "par-en-over": true,
         "color_over": "#121212",
         "par_opacity": 32
