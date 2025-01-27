@@ -18,6 +18,40 @@
         "color_scheme": "scheme-1"
       }
     },
+    "test_parallax_6wndcy": {
+      "type": "test-parallax",
+      "blocks": {
+        "text_QtjirF": {
+          "type": "text",
+          "settings": {
+            "image": "shopify://shop_images/Lavender_mask2.png",
+            "txt1-hd1": "",
+            "parallax-h": "h2",
+            "txt1-hd2": "",
+            "parallax-subh": "h3",
+            "par1_showbutton": true,
+            "par1_button_label": "",
+            "par1_button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_QtjirF"
+      ],
+      "settings": {
+        "paral-full": true,
+        "par_img_sz": "600",
+        "par_hd_sz": "55",
+        "par_subhd_sz": "25",
+        "par_button_sz": "25",
+        "par_letter_sp": "1",
+        "par_txt_align": "left",
+        "par_txt_top_pos": "50",
+        "par-en-over": true,
+        "color_over": "#000000",
+        "par_opacity": 50
+      }
+    },
     "caraousel_slider_nHRdE7": {
       "type": "caraousel-slider",
       "blocks": {
@@ -181,6 +215,7 @@
   },
   "order": [
     "banner",
+    "test_parallax_6wndcy",
     "caraousel_slider_nHRdE7",
     "collection_list_M78JL3",
     "product-grid",
