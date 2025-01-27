@@ -250,6 +250,32 @@
     "test_testimonial_MmbYwc": {
       "type": "test-testimonial",
       "blocks": {
+        "slide_Cm3xQM": {
+          "type": "slide",
+          "settings": {
+            "rahulcolor": "",
+            "desc-color": "",
+            "box-bg-color": "",
+            "slide-text": "Your heading",
+            "desc": "",
+            "slide-heading-font-size": 20,
+            "slide-font-weight": "normal",
+            "desc-size": 15
+          }
+        },
+        "slide_amtGNP": {
+          "type": "slide",
+          "settings": {
+            "rahulcolor": "",
+            "desc-color": "",
+            "box-bg-color": "",
+            "slide-text": "Your heading",
+            "desc": "",
+            "slide-heading-font-size": 20,
+            "slide-font-weight": "normal",
+            "desc-size": 15
+          }
+        },
         "slide_JR4xHF": {
           "type": "slide",
           "settings": {
@@ -308,6 +334,8 @@
         }
       },
       "block_order": [
+        "slide_Cm3xQM",
+        "slide_amtGNP",
         "slide_JR4xHF",
         "slide_7NiaBE",
         "slide_hyhNa9",
