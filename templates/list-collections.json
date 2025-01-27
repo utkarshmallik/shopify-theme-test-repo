@@ -1,17 +1,338 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
+    "test_parallax_QtkUn9": {
+      "type": "test-parallax",
+      "blocks": {
+        "text_XyKpmn": {
+          "type": "text",
+          "settings": {
+            "image": "shopify://shop_images/alexander-rotker-l8p1aWZqHvE-unsplash_487a6849-a855-4e4e-98ca-9ca10928d1db.jpg",
+            "txt1-hd1": "",
+            "parallax-h": "h2",
+            "txt1-hd2": "",
+            "parallax-subh": "h3",
+            "par1_showbutton": true,
+            "par1_button_label": "",
+            "par1_button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_XyKpmn"
+      ],
+      "settings": {
+        "paral-full": true,
+        "par_img_sz": "600",
+        "par_hd_sz": "55",
+        "par_subhd_sz": "25",
+        "par_button_sz": "25",
+        "par_letter_sp": "1",
+        "par_txt_align": "left",
+        "par_txt_top_pos": "50",
+        "par-en-over": true,
+        "color_over": "#000000",
+        "par_opacity": 50
+      }
+    },
+    "rich_text_m3BUji": {
+      "type": "rich-text",
+      "blocks": {
+        "caption_bWrkAd": {
+          "type": "caption",
+          "settings": {
+            "caption": "NIKE FOOTBALL",
+            "text_style": "subtitle",
+            "text_size": "large"
+          }
+        },
+        "heading_YtNePY": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>ENERGY PACK</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_fnGtY7": {
+          "type": "text",
+          "settings": {
+            "text": "<h4><strong>THE ENERGY YOU NEED TO REACH NEW LEVEL</strong></h4>"
+          }
+        },
+        "button_zrFwcc": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP",
+            "button_link": "shopify://collections/clctn",
+            "button_style_secondary": false,
+            "button_label_2": "SHOP",
+            "button_link_2": "shopify://collections/shoe",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "caption_bWrkAd",
+        "heading_YtNePY",
+        "text_fnGtY7",
+        "button_zrFwcc"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "videoswatches_tQf6xJ": {
+      "type": "videoswatches",
+      "blocks": {
+        "gif_swatch_X4BALi": {
+          "type": "gif_swatch",
+          "settings": {
+            "gif": "shopify://shop_images/SoccerLoopGIFbyNike.gif",
+            "title": "ABC-XYZ"
+          }
+        },
+        "gif_swatch_F7Ftfq": {
+          "type": "gif_swatch",
+          "settings": {
+            "gif": "shopify://shop_images/SoccerLoopGIFbyNike.gif",
+            "title": "ABC-XYZ"
+          }
+        },
+        "gif_swatch_Aya4UH": {
+          "type": "gif_swatch",
+          "settings": {
+            "gif": "shopify://shop_images/background-7170_256.gif",
+            "title": "ABC-XYZ"
+          }
+        }
+      },
+      "block_order": [
+        "gif_swatch_X4BALi",
+        "gif_swatch_F7Ftfq",
+        "gif_swatch_Aya4UH"
+      ],
+      "settings": {
+        "heading": "BRAND BY STORE",
+        "inline_richtext_setting": "BEST IN THE MARKET",
+        "swatches_per_row": 3
+      }
+    },
+    "caraousel_slider_Ke4FgY": {
+      "type": "caraousel-slider",
+      "blocks": {
+        "carousel_rqLrCp": {
+          "type": "carousel",
+          "settings": {
+            "title": "Full Name",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+          }
+        },
+        "carousel_9nhP7e": {
+          "type": "carousel",
+          "settings": {
+            "title": "Full Name",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+          }
+        },
+        "carousel_qA7mCm": {
+          "type": "carousel",
+          "settings": {
+            "title": "Full Name",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+          }
+        },
+        "carousel_bCJpaQ": {
+          "type": "carousel",
+          "settings": {
+            "title": "Full Name",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+          }
+        },
+        "carousel_467mJn": {
+          "type": "carousel",
+          "settings": {
+            "title": "Full Name",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "carousel_rqLrCp",
+        "carousel_9nhP7e",
+        "carousel_qA7mCm",
+        "carousel_bCJpaQ",
+        "carousel_467mJn"
+      ],
+      "settings": {
+        "bg": "",
+        "product": "shoe-3",
+        "title": "OUR BEST PRODUCT",
+        "image_ratio": "adapt",
+        "cell_align": "center",
+        "title_mb": 48,
+        "cell_width": "25%",
+        "wrap_around": "true",
+        "mr": 16
+      }
+    },
     "main": {
       "type": "main-list-collections",
       "settings": {
-        "title": "Collections",
+        "title": "MENS",
         "sort": "alphabetical",
         "image_ratio": "square",
-        "columns_desktop": 3,
+        "columns_desktop": 2,
         "columns_mobile": "2"
+      }
+    },
+    "multicolumn_XPKxjD": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_V4YmXm": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/jakob-owens-JzJSybPFb3s-unsplash_58f6d3ae-4dfd-41aa-ac91-4d98445f82e9.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "BUY VARIANTS",
+            "link": ""
+          }
+        },
+        "column_gLxVM3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/fachry-zella-devandra-bNSdIkCBJOs-unsplash_cf872550-6d09-400d-9202-5344e376af34.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "BUY VARIANTS",
+            "link": ""
+          }
+        },
+        "column_qkm8xm": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/maksim-larin-NOpsC3nWTzY-unsplash_768a2e5c-228f-491d-b98f-df27b20a377f.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "BUY VARIANTS",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_V4YmXm",
+        "column_gLxVM3",
+        "column_qkm8xm"
+      ],
+      "custom_css": [],
+      "settings": {
+        "title": "MORE FROM US",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "circle_header_3gnb6n": {
+      "type": "circle-header",
+      "blocks": {
+        "image_BzbrFW": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify://shop_images/mojtaba-fahiminia-CQzCMx_wvk4-unsplash_cdcaa4e8-1c20-4992-a8e2-1cb1ec1f8bc8.jpg",
+            "bubble_text": "XYZ",
+            "bubble_link": "shopify://products/shoe-2"
+          }
+        },
+        "image_YxMzKJ": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify://shop_images/ryan-plomp-76w_eDO1u1E-unsplash.jpg",
+            "bubble_text": "XYZ",
+            "bubble_link": "shopify://products/shoe-2"
+          }
+        },
+        "image_aiijP3": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify://shop_images/maksim-larin-ezdrvzA1hZw-unsplash.jpg",
+            "bubble_text": "ABC",
+            "bubble_link": "shopify://products/shoe-4"
+          }
+        }
+      },
+      "block_order": [
+        "image_BzbrFW",
+        "image_YxMzKJ",
+        "image_aiijP3"
+      ],
+      "settings": {
+        "slider_width": 100,
+        "slider_gap": 52,
+        "slider_gap_mobile": 16,
+        "icon_size": 172,
+        "icon_size_mobile": 74,
+        "icon_space": 0,
+        "icon_space_mobile": 0,
+        "icon_border_thickness": 2,
+        "icon_square": false,
+        "text_custom": false,
+        "text_font": "bevan_n4",
+        "text_size": 18,
+        "text_size_mobile": 10,
+        "text_height": 130,
+        "text_mt": 8,
+        "icon_border_color": "#000000",
+        "icon_border_gradient": "",
+        "text_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "border_gradient": "",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": true,
+        "content_width": 150,
+        "border_thickness": 0,
+        "lazy": true,
+        "hide_mobile": false,
+        "hide_desktop": false
       }
     }
   },
   "order": [
-    "main"
+    "test_parallax_QtkUn9",
+    "rich_text_m3BUji",
+    "videoswatches_tQf6xJ",
+    "caraousel_slider_Ke4FgY",
+    "main",
+    "multicolumn_XPKxjD",
+    "circle_header_3gnb6n"
   ]
 }

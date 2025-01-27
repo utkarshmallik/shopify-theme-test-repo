@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "banner": {
@@ -14,16 +23,72 @@
         "products_per_page": 16,
         "columns_desktop": 4,
         "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "image_shape": "default",
-        "show_secondary_image": false,
+        "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
         "quick_add": "none",
         "enable_filtering": true,
-        "filter_type": "horizontal",
-        "enable_sorting": true,
+        "filter_type": "vertical",
+        "enable_sorting": false,
         "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_xFEm3L": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_n968Xy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/maksim-larin-NOpsC3nWTzY-unsplash_768a2e5c-228f-491d-b98f-df27b20a377f.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "BUY VARIANTS",
+            "link": "shopify://products/shoe-1"
+          }
+        },
+        "column_HEYXCc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/fachry-zella-devandra-bNSdIkCBJOs-unsplash_cf872550-6d09-400d-9202-5344e376af34.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "BUY VARIANTS",
+            "link": "shopify://products/shoe-3"
+          }
+        },
+        "column_xzHD7M": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/jakob-owens-JzJSybPFb3s-unsplash_58f6d3ae-4dfd-41aa-ac91-4d98445f82e9.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "BUY VARIANTS",
+            "link": "shopify://products/shoe-4"
+          }
+        }
+      },
+      "block_order": [
+        "column_n968Xy",
+        "column_HEYXCc",
+        "column_xzHD7M"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -31,6 +96,7 @@
   },
   "order": [
     "banner",
-    "product-grid"
+    "product-grid",
+    "multicolumn_xFEm3L"
   ]
 }
