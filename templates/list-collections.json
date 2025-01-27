@@ -100,7 +100,7 @@
         ".section-padding {margin-bottom: 10%; margin-top: 5%;}"
       ],
       "settings": {
-        "bg_color": "#fff",
+        "bg_color": "#ffffff",
         "timer_section_title": "Hurry Up!",
         "timer_section_subtitle": "Sale ends in:",
         "title_text_color": "#000000",
@@ -212,12 +212,46 @@
     },
     "main": {
       "type": "main-list-collections",
+      "disabled": true,
       "settings": {
         "title": "MENS",
         "sort": "alphabetical",
         "image_ratio": "square",
-        "columns_desktop": 2,
+        "columns_desktop": 3,
         "columns_mobile": "2"
+      }
+    },
+    "collection_list_nTnipQ": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_DhxqdH": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sports"
+          }
+        },
+        "featured_collection_mQKChw": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "shoe"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_DhxqdH",
+        "featured_collection_mQKChw"
+      ],
+      "settings": {
+        "title": "MENS",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 2,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "multicolumn_XPKxjD": {
@@ -356,6 +390,7 @@
     "videoswatches_tQf6xJ",
     "caraousel_slider_Ke4FgY",
     "main",
+    "collection_list_nTnipQ",
     "multicolumn_XPKxjD",
     "circle_header_3gnb6n"
   ]
