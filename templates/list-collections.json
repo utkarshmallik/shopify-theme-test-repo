@@ -465,7 +465,9 @@
         "column_gLxVM3",
         "column_qkm8xm"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".multicolumn.background-primary .multicolumn-card {background: #99aea1 linear-gradient(rgba(var(--color-foreground), .04), rgba(var(--color-foreground), .04)); box-shadow: 5px 5px 5px #a5d4a6;}"
+      ],
       "settings": {
         "title": "MORE FROM US",
         "heading_size": "h1",
