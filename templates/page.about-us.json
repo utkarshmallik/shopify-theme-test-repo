@@ -130,11 +130,53 @@
         "section_color_scheme": "",
         "cell_align": "center"
       }
+    },
+    "tab_contents_DMPXFQ": {
+      "type": "tab-contents",
+      "blocks": {
+        "tab_CDaBbM": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "STORE LOCATION",
+            "tab_content": "lorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis  pa"
+          }
+        },
+        "tab_VGfBVk": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "MAIN HUB",
+            "tab_content": "lorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis  pa"
+          }
+        },
+        "tab_hMBtm3": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "FINAL BOSS",
+            "tab_content": "lorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis  pa"
+          }
+        },
+        "tab_Uh6A6N": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "TRANSFORMERS",
+            "tab_content": "lorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis  pa"
+          }
+        }
+      },
+      "block_order": [
+        "tab_CDaBbM",
+        "tab_VGfBVk",
+        "tab_hMBtm3",
+        "tab_Uh6A6N"
+      ],
+      "custom_css": [],
+      "settings": {}
     }
   },
   "order": [
     "main",
     "test_testimonial_rYQRKt",
-    "scroll_up_counter_UK63fg"
+    "scroll_up_counter_UK63fg",
+    "tab_contents_DMPXFQ"
   ]
 }
