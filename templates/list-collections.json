@@ -97,7 +97,7 @@
     "countdown_timer_t7RWwU": {
       "type": "countdown-timer",
       "custom_css": [
-        ".section-padding{margin-bottom: 10%; margin-top: 5%;}"
+        ".section-padding {margin-bottom: 10%; margin-top: 5%;}"
       ],
       "settings": {
         "bg_color": "#fff",
@@ -105,8 +105,8 @@
         "timer_section_subtitle": "Sale ends in:",
         "title_text_color": "#000000",
         "subtitle_text_color": "#680909",
-        "timer_title_size": 32,
-        "timer_subtitle_size": 24,
+        "timer_title_size": 37,
+        "timer_subtitle_size": 27,
         "date_picker": "01/28/2025",
         "timer_color": "#f20000",
         "timer_section_btn_link": "shopify://collections/shoe",
