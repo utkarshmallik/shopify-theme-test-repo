@@ -60,9 +60,7 @@
     },
     "countdown_timer_t7RWwU": {
       "type": "countdown-timer",
-      "custom_css": [
-        ".section-padding {margin-bottom: 3%;}"
-      ],
+      "custom_css": [],
       "settings": {
         "bg_color": "#000000",
         "timer_section_title": "Hurry Up!",
@@ -94,6 +92,7 @@
       "block_order": [
         "caption_qHwpmR"
       ],
+      "custom_css": [],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
