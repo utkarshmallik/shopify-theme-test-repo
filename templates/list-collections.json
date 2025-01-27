@@ -31,7 +31,7 @@
       ],
       "settings": {
         "paral-full": true,
-        "par_img_sz": "400",
+        "par_img_sz": "600",
         "par_hd_sz": "55",
         "par_subhd_sz": "25",
         "par_button_sz": "25",
@@ -41,6 +41,69 @@
         "par-en-over": true,
         "color_over": "#000000",
         "par_opacity": 50
+      }
+    },
+    "rich_text_m3BUji": {
+      "type": "rich-text",
+      "blocks": {
+        "caption_bWrkAd": {
+          "type": "caption",
+          "settings": {
+            "caption": "NIKE FOOTBALL",
+            "text_style": "subtitle",
+            "text_size": "large"
+          }
+        },
+        "heading_YtNePY": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>ENERGY PACK</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_fnGtY7": {
+          "type": "text",
+          "settings": {
+            "text": "<h4><strong>THE ENERGY YOU NEED TO REACH NEW LEVEL</strong></h4>"
+          }
+        },
+        "button_zrFwcc": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "button_rAgEft": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "caption_bWrkAd",
+        "heading_YtNePY",
+        "text_fnGtY7",
+        "button_zrFwcc",
+        "button_rAgEft"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "videoswatches_tQf6xJ": {
@@ -206,6 +269,7 @@
   },
   "order": [
     "test_parallax_QtkUn9",
+    "rich_text_m3BUji",
     "videoswatches_tQf6xJ",
     "caraousel_slider_Ke4FgY",
     "main",
