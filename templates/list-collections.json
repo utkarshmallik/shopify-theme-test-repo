@@ -64,6 +64,30 @@
         "cta_text_color": "#000000"
       }
     },
+    "rich_text_nD7iPt": {
+      "type": "rich-text",
+      "blocks": {
+        "caption_qHwpmR": {
+          "type": "caption",
+          "settings": {
+            "caption": "OUR BEST PRODUCT",
+            "text_style": "subtitle",
+            "text_size": "large"
+          }
+        }
+      },
+      "block_order": [
+        "caption_qHwpmR"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "featured_product_pKcmBU": {
       "type": "featured-product",
       "blocks": {
@@ -534,6 +558,7 @@
   "order": [
     "test_parallax_QtkUn9",
     "countdown_timer_t7RWwU",
+    "rich_text_nD7iPt",
     "featured_product_pKcmBU",
     "test_testimonial_MmbYwc",
     "rich_text_m3BUji",
