@@ -64,6 +64,77 @@
         "cta_text_color": "#000000"
       }
     },
+    "featured_product_pKcmBU": {
+      "type": "featured-product",
+      "blocks": {
+        "text_gF7Mcm": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_qr3ekV": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_GBNrwV": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_43Xfhr": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_jDYpCf": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_xLcyiy": {
+          "type": "buy_buttons",
+          "disabled": true,
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_G464M7": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_gF7Mcm",
+        "title_qr3ekV",
+        "price_GBNrwV",
+        "variant_picker_43Xfhr",
+        "quantity_selector_jDYpCf",
+        "buy_buttons_xLcyiy",
+        "share_G464M7"
+      ],
+      "settings": {
+        "product": "shoe-1",
+        "color_scheme": "",
+        "secondary_background": true,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "hover",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "test_testimonial_MmbYwc": {
       "type": "test-testimonial",
       "blocks": {
@@ -463,6 +534,7 @@
   "order": [
     "test_parallax_QtkUn9",
     "countdown_timer_t7RWwU",
+    "featured_product_pKcmBU",
     "test_testimonial_MmbYwc",
     "rich_text_m3BUji",
     "collection_list_nTnipQ",
