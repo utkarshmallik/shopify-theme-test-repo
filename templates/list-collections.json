@@ -383,6 +383,24 @@
     "videoswatches_tQf6xJ": {
       "type": "videoswatches",
       "blocks": {
+        "gif_swatch_kGyMBr": {
+          "type": "gif_swatch",
+          "settings": {
+            "title": "My GIF Title"
+          }
+        },
+        "gif_swatch_ygw9dX": {
+          "type": "gif_swatch",
+          "settings": {
+            "title": "My GIF Title"
+          }
+        },
+        "gif_swatch_x4jAH9": {
+          "type": "gif_swatch",
+          "settings": {
+            "title": "My GIF Title"
+          }
+        },
         "gif_swatch_X4BALi": {
           "type": "gif_swatch",
           "settings": {
@@ -406,6 +424,9 @@
         }
       },
       "block_order": [
+        "gif_swatch_kGyMBr",
+        "gif_swatch_ygw9dX",
+        "gif_swatch_x4jAH9",
         "gif_swatch_X4BALi",
         "gif_swatch_F7Ftfq",
         "gif_swatch_Aya4UH"
@@ -413,7 +434,7 @@
       "settings": {
         "heading": "BRAND BY STORE",
         "inline_richtext_setting": "BEST IN THE MARKET",
-        "swatches_per_row": 3
+        "swatches_per_row": 4
       }
     },
     "main": {
