@@ -70,22 +70,11 @@
         "button_zrFwcc": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "SHOP",
+            "button_link": "shopify://collections/clctn",
             "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        },
-        "button_rAgEft": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
+            "button_label_2": "SHOP",
+            "button_link_2": "shopify://collections/shoe",
             "button_style_secondary_2": false
           }
         }
@@ -94,13 +83,12 @@
         "caption_bWrkAd",
         "heading_YtNePY",
         "text_fnGtY7",
-        "button_zrFwcc",
-        "button_rAgEft"
+        "button_zrFwcc"
       ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "scheme-4",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
