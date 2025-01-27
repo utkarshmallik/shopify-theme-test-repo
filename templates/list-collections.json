@@ -46,12 +46,11 @@
     "rich_text_m3BUji": {
       "type": "rich-text",
       "blocks": {
-        "caption_bWrkAd": {
-          "type": "caption",
+        "heading_A9aTmd": {
+          "type": "heading",
           "settings": {
-            "caption": "NIKE FOOTBALL",
-            "text_style": "subtitle",
-            "text_size": "large"
+            "heading": "NIKE FOOTBALL",
+            "heading_size": "h2"
           }
         },
         "heading_YtNePY": {
@@ -80,7 +79,7 @@
         }
       },
       "block_order": [
-        "caption_bWrkAd",
+        "heading_A9aTmd",
         "heading_YtNePY",
         "text_fnGtY7",
         "button_zrFwcc"
