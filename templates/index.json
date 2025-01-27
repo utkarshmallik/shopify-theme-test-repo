@@ -13,9 +13,10 @@
       "type": "hero-video",
       "settings": {
         "heading": "",
-        "fullwidth": false,
+        "fullwidth": true,
         "autoplay": true,
-        "controller": false
+        "controller": false,
+        "self_hosted_video": "shopify://files/videos/5155396-uhd_3840_2160_30fps.mp4"
       }
     },
     "test_parallax_DpjDcA": {
