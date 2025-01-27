@@ -15,8 +15,7 @@
         "heading": "",
         "fullwidth": false,
         "autoplay": true,
-        "controller": false,
-        "self_hosted_video": "shopify://files/videos/8533114-uhd_3840_2160_25fps.mp4"
+        "controller": false
       }
     },
     "test_parallax_DpjDcA": {
