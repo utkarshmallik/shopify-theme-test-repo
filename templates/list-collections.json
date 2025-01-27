@@ -9,6 +9,42 @@
  */
 {
   "sections": {
+    "videoswatches_tQf6xJ": {
+      "type": "videoswatches",
+      "blocks": {
+        "gif_swatch_X4BALi": {
+          "type": "gif_swatch",
+          "settings": {
+            "gif": "shopify://shop_images/SoccerLoopGIFbyNike.gif",
+            "title": "ABC-XYZ"
+          }
+        },
+        "gif_swatch_F7Ftfq": {
+          "type": "gif_swatch",
+          "settings": {
+            "gif": "shopify://shop_images/SoccerLoopGIFbyNike.gif",
+            "title": "ABC-XYZ"
+          }
+        },
+        "gif_swatch_Aya4UH": {
+          "type": "gif_swatch",
+          "settings": {
+            "gif": "shopify://shop_images/background-7170_256.gif",
+            "title": "ABC-XYZ"
+          }
+        }
+      },
+      "block_order": [
+        "gif_swatch_X4BALi",
+        "gif_swatch_F7Ftfq",
+        "gif_swatch_Aya4UH"
+      ],
+      "settings": {
+        "heading": "BRAND BY STORE",
+        "inline_richtext_setting": "BEST IN THE MARKET",
+        "swatches_per_row": 3
+      }
+    },
     "caraousel_slider_Ke4FgY": {
       "type": "caraousel-slider",
       "blocks": {
@@ -79,6 +115,7 @@
     }
   },
   "order": [
+    "videoswatches_tQf6xJ",
     "caraousel_slider_Ke4FgY",
     "main"
   ]
